@@ -1,6 +1,6 @@
 {
   "title": "小・中学校理科 体系フラッシュカード",
-  "version": "2026.07.1",
+  "version": "2026.07.2",
   "generated_on": "2026-07-10",
   "language": "ja-JP",
   "card_count": 857,
@@ -44,6 +44,12 @@
       "探究": 20,
       "生物": 30
     }
+  },
+  "illustrations": {
+    "count": 26,
+    "format": "png",
+    "scope": "documentation",
+    "generated_on": "2026-07-13"
   },
   "ruby": "HTML <ruby><rt>",
   "anki_import": [

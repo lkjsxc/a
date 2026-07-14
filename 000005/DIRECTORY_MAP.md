@@ -6,6 +6,15 @@ science_master_2026/
 ├── DIRECTORY_MAP.md                   # この案内
 ├── manifest.json                      # 版・枚数・形式の機械可読情報
 ├── science_cards.xlsx                 # 検索・編集・集計用ワークブック
+├── assets/
+│   ├── README.md                     # 図版26点のプロンプト・配置・QA台帳
+│   └── images/                       # 本文に掲載する不透明PNG
+│       ├── overview/                 # 教材全体の概観図1点
+│       ├── inquiry/                  # 探究の概要・主題図5点
+│       ├── physics/                  # 物理の概要・主題図5点
+│       ├── chemistry/                # 化学の概要・主題図5点
+│       ├── biology/                  # 生物の概要・主題図5点
+│       └── earth_science/            # 地学の概要・主題図5点
 ├── anki/
 │   ├── science_core_first_150.tsv     # 最初に学ぶ厳選150枚
 │   ├── science_front_back.tsv         # 表・裏2列、推奨最小版
@@ -45,4 +54,5 @@ science_master_2026/
 - **一つの表で確認**：`tables/all_cards_front_back.md`
 - **順序立てて理解**：`reading/00_start_here/learning_plan.md` → `reading/02_grade_maps/` → 各領域の`README.md`
 - **内容を編集**：`science_cards.xlsx` または `data/science_cards_master.csv`
+- **図版の配置と検証を確認**：`assets/README.md`
 - **抜け・重複を監査**：`quality/`
