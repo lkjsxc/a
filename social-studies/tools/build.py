@@ -28,7 +28,7 @@ from make_assets import PREFECTURES, CLIMATE, generate as make_assets
 ROOT=Path(__file__).resolve().parents[1]
 SUBJECTS={'foundation':'入口','geography':'地理','history':'歴史','civics':'公民'}
 SUBJECT_ORDER=list(SUBJECTS)
-REVIEW_DATE='2026-09-29'
+REVIEW_DATE='2026-09-30'
 MODEL_ID=1656926029
 DECK_IDS={name:1656926100+i for i,name in enumerate(SUBJECT_ORDER+['atlas'])}
 
@@ -143,6 +143,8 @@ def ruby_dictionary(cards: list[dict]) -> dict:
     # Particularly important short/difficult words; matching avoids compound fragments.
     d.update({'殷':'いん','周':'しゅう','秦':'しん','随':'ずい','隋':'ずい','沿岸部':'えんがんぶ','文化圏':'ぶんかけん','灌漑':'かんがい','賦課':'ふか','割譲':'かつじょう','租借':'そしゃく','賠償金':'ばいしょうきん','公布':'こうふ','施行':'しこう','勅許':'ちょっきょ','摂関':'せっかん','廃藩置県':'はいはんちけん','摂政':'せっしょう','関白':'かんぱく','茨城':'いばらき','岐阜':'ぎふ'})
     d.pop('随',None)
+    # Aliases and difficult words not used as stand-alone card titles.
+    d.update({'厩戸王':'うまやとおう','聖徳太子':'しょうとくたいし','蘇我馬子':'そがのうまこ','蘇我氏':'そがし','百済':'くだら','新羅':'しらぎ','高麗':'こうらい','大王':'おおきみ','須恵器':'すえき','機織り':'はたおり','埴輪':'はにわ','卜占':'ぼくせん','天智天皇':'てんじてんのう','持統天皇':'じとうてんのう','大海人皇子':'おおあまのおうじ','法隆寺':'ほうりゅうじ','東大寺':'とうだいじ','唐招提寺':'とうしょうだいじ','正倉院':'しょうそういん','国分寺':'こくぶんじ','国分尼寺':'こくぶんにじ','天台宗':'てんだいしゅう','真言宗':'しんごんしゅう','延暦寺':'えんりゃくじ','比叡山':'ひえいざん','高野山':'こうやさん','金剛峯寺':'こんごうぶじ','平等院鳳凰堂':'びょうどういんほうおうどう','阿弥陀仏':'あみだぶつ','極楽浄土':'ごくらくじょうど','往生':'おうじょう','寝殿造':'しんでんづくり','大和絵':'やまとえ','蝦夷':'えみし','六波羅探題':'ろくはらたんだい','後鳥羽上皇':'ごとばじょうこう','北条泰時':'ほうじょうやすとき','新田義貞':'にったよしさだ','足利義政':'あしかがよしまさ','足利義昭':'あしかがよしあき','観阿弥':'かんあみ','世阿弥':'ぜあみ','運慶':'うんけい','快慶':'かいけい','法然':'ほうねん','親鸞':'しんらん','一遍':'いっぺん','栄西':'えいさい','道元':'どうげん','日蓮':'にちれん','題目':'だいもく','法華経':'ほけきょう','鴨長明':'かものちょうめい','兼好法師':'けんこうほうし','方丈記':'ほうじょうき','徒然草':'つれづれぐさ','龍安寺':'りょうあんじ','枯山水':'かれさんすい','枕草子':'まくらのそうし','清少納言':'せいしょうなごん','紫式部':'むらさきしきぶ','遣使':'けんし','臣民':'しんみん','総攬':'そうらん','勅諭':'ちょくゆ','償還':'しょうかん','罷免':'ひめん','弾劾':'だんがい','租借権':'そしゃくけん','遼東半島':'りょうとうはんとう','澎湖諸島':'ほうこしょとう','盧溝橋事件':'ろこうきょうじけん','奄美':'あまみ','択捉島':'えとろふとう','国後島':'くなしりとう','色丹島':'しこたんとう','歯舞群島':'はぼまいぐんとう','黒潮':'くろしお','親潮':'おやしお','日本海流':'にほんかいりゅう','千島海流':'ちしまかいりゅう','冷帯':'れいたい','亜寒帯':'あかんたい','堆積':'たいせき','侵食':'しんしょく','峡谷':'きょうこく','河口':'かこう','涵養':'かんよう','干拓':'かんたく','硫黄':'いおう','綿花':'めんか','繭':'まゆ','生糸':'きいと','絹織物':'きぬおりもの','飼料':'しりょう','乳牛':'にゅうぎゅう','稚魚':'ちぎょ','稚貝':'ちがい','漁獲':'ぎょかく','租':'そ','庸':'よう','調':'ちょう','付加価値':'ふかかち','国内総生産':'こくないそうせいさん','非核三原則':'ひかくさんげんそく'})
     return d
 
 
@@ -197,7 +199,7 @@ def lesson_md(lesson: dict, byid: dict, refs: dict, vocab: dict) -> str:
     lid=lesson['id'];lines=[f'# {lid}　{lesson["title"]}',f'{SUBJECTS[lesson["subject"]]} / 配当学年の目安：{lesson["year"]}']
     if lesson['prerequisites']:
         lines += ['先に読んでおくとよい単元：'+ '、'.join(f'[{p} {byid[p]["title"]}]({p}.md)' for p in lesson['prerequisites'])]
-    lines += [lesson['text'],'## ことばの確認','S：まず身に付けたい土台。A：比較・理由・条件を深める内容。','|目印|ことば|意味とポイント|','|---|---|---|']
+    lines += [ruby(lesson['text'],vocab),'## ことばの確認','S：まず身に付けたい土台。A：比較・理由・条件を深める内容。','|目印|ことば|意味とポイント|','|---|---|---|']
     for c in lesson['cards']:
         lines.append(f'|{c["level"]}|{front_html(c,vocab)}|{back_html(c,vocab)}|')
     lines += ['## 確認問題']
@@ -207,7 +209,7 @@ def lesson_md(lesson: dict, byid: dict, refs: dict, vocab: dict) -> str:
     for key in lesson['sources']:
         r=refs['sources'][key];lines += [f'- [{r["title"]}]({r["url"]})']
     lines += ['参照先には入口ページも含みます。本文・問題は独自に執筆したものです。','[単元一覧へ戻る](../README.md)']
-    return '\n\n'.join(lines[:4])+ '\n\n'+'\n\n'.join(lines[4:]) if False else '\n\n'.join(lines).replace('|\n\n|','|\n|')
+    return '\n\n'.join(lines).replace('|\n\n|','|\n|')
 
 
 TIMELINE=[
@@ -287,6 +289,8 @@ APKGは用語ごとに安定したGUIDを使います。同じノートを継続
 ルビを表示できない環境では、括弧内の読みが出る場合があります。音声は含みません。図表は本文・地図帳・総合問題で別に練習します。
 '''
     save(out/'README.md',instructions)
+    instructions_html=md_html(instructions,vocab)
+    save(out/'README.html',document('Ankiで学ぶ','<main><a href="../index.html">単元一覧</a>'+instructions_html+'</main>'))
     return {'notes':nn,'cards':nc,'unique_guids':ng,'csv_roundtrip':True,'tsv_roundtrip':True,'sqlite_integrity':'ok','front_template':'{{Front}}','desktop_gui_import_tested':False}
 
 
@@ -309,7 +313,15 @@ def make_mock_exams(data: dict, vocab: dict) -> None:
 def build() -> dict:
     lessons=parse_sources();refs=json.loads((ROOT/'source'/'sources.json').read_text());exams=json.loads((ROOT/'source'/'assessments.json').read_text())
     validate(lessons,refs,exams)
-    cards=[c for l in lessons for c in l['cards']]+prefecture_cards()
+    base_cards=[c for l in lessons for c in l['cards']]
+    existing_fronts={unicodedata.normalize('NFKC',c['front']) for c in base_cards}
+    atlas_cards=prefecture_cards()
+    for c in atlas_cards:
+        if unicodedata.normalize('NFKC',c['front']) in existing_fronts:
+            suffix,reading=('の都庁所在地','のとちょうしょざいち') if c['front']=='東京都' else ('の道庁所在地','のどうちょうしょざいち') if c['front']=='北海道' else ('の府庁所在地','のふちょうしょざいち') if c['front'].endswith('府') else ('の県庁所在地','のけんちょうしょざいち')
+            c['front']+=suffix
+            c['reading']+=reading
+    cards=base_cards+atlas_cards
     assert len({unicodedata.normalize('NFKC',c['front']) for c in cards})==len(cards),'Atlas front duplicates a lesson keyword'
     assert len({c['id'] for c in cards})==len(cards)
     vocab=ruby_dictionary(cards)
@@ -326,6 +338,8 @@ def build() -> dict:
         # Do not apply ruby twice: parser skips existing ruby spans.
         save(ROOT/'textbook'/f'{l["id"]}.md',raw)
         fragment=md_html(raw,vocab)
+        standalone=re.sub(r'href="([FGHC]\d{2})\.md"',r'href="\1.html"',fragment).replace('href="../README.md"','href="../index.html"')
+        save(ROOT/'textbook'/f'{l["id"]}.html',document(l['title'],'<main>'+standalone+'</main>',True))
         # Rebase per-lesson relative links for the all-in-one document.
         fragment=re.sub(r'href="([FGHC]\d{2})\.md"',r'href="#\1"',fragment).replace('href="../README.md"','href="#contents"')
         articles.append(f'<article id="{l["id"]}" data-lesson="{l["id"]}">{fragment}</article>')
@@ -362,14 +376,20 @@ def build() -> dict:
         if r.get('detail_url'):source_lines.append(f'[詳しい資料]({r["detail_url"]})')
     source_lines += ['## 地図の原図','[Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/)のpublic-domainデータを加工。地図の表現は、特定の国家の領有権の主張を示すものではありません。','## 発展学習・取り込み方法']
     for r in refs['further_study']:source_lines.append(f'- [{r["title"]}]({r["url"]})：{r["note"]}')
+    source_lines += ['## 今回確認した補足資料（2026年9月30日）', '[GDP・実質GDP（日本銀行）](https://www.boj.or.jp/about/education/oshiete/glossary/economy/e03.htm) / [公開市場操作（日本銀行）](https://www.boj.or.jp/about/education/oshiete/seisaku/b34.htm)', '[直接請求制度（岡山市）](https://www.city.okayama.jp/shisei/0000077967.html) / [事務監査と住民監査の区別（松江市）](https://www.city.matsue.lg.jp/soshikikarasagasu/kansaiinjimukyoku/kansa/1/3669.html)', '[地図記号一覧（国土地理院）](https://www.gsi.go.jp/kohokocho/map-sign-tizukigou-2022-itiran.html) / [庭園文化（京都市）](https://kyoto-museums.city.kyoto.lg.jp/feature-column/gardens/)', '[NPTの概要（外務省）](https://www.mofa.go.jp/mofaj/gaiko/kaku/npt/gaiyo.html) / [非核三原則に関する歴史的な国会決議（外務省）](https://www.mofa.go.jp/mofaj/gaiko/kaku/gensoku/ketsugi.html)', '[Anki公式マニュアル：APKG更新](https://docs.ankiweb.net/importing/packaged-decks.html) / [Anki旧取り込みAPIの変更記録](https://github.com/ankitects/anki/issues/5307)', '上記と憲法条文などの重要な制度を確認しました。全リンク先の全文章を逐語的に照合したとの意味ではなく、専門家の独立査読・入試難易度の標準化は未実施です。']
     save(ROOT/'SOURCES.md','\n\n'.join(source_lines))
     coverage=['# 範囲と単元の対応','中学校学習指導要領解説・社会編の地理的・歴史的・公民的分野を参照した、教材独自の対応表です。学校・教科書ごとの配当順とは異なる場合があります。全教科書の全細目を一対一で照合した表ではありません。','|ID|分野|単元|学年目安|用語|確認問題|','|---|---|---|---|---:|---:|']
     for l in lessons:coverage.append(f'|{l["id"]}|{SUBJECTS[l["subject"]]}|[{l["title"]}](textbook/{l["id"]}.md)|{l["year"]}|{len(l["cards"])}|{len(l["questions"])}|')
     save(ROOT/'coverage.md','\n'.join(coverage))
     anki_report=make_anki(cards,vocab);make_mock_exams(exams,vocab)
     stats={'lessons':len(lessons),'lesson_counts':dict(collections.Counter(x['subject'] for x in lessons)),'lesson_cards':sum(len(x['cards']) for x in lessons),'atlas_cards':47,'anki_cards':len(cards),'lesson_questions':sum(len(x['questions']) for x in lessons),'worked_examples':12,'mock_exams':3,'mock_questions':72,'timeline_entries':len(TIMELINE),'reading_characters':sum(len(l['text']) for l in lessons)}
-    header=f'<header><p class="meta">中学校3年間の社会・確認基準日 {REVIEW_DATE}</p><h1>社会を、つながりから学ぶ</h1><p>予備知識ゼロから、地理・歴史・公民を読み、思い出し、資料で確かめる。</p><p>{len(lessons)}単元 / {len(cards):,}枚のAnki / 確認問題{stats["lesson_questions"]}問 / 総合問題3回</p><p class="notice">初めて使うときは<a href="study-guide.html">学び方と資料の読み方</a>から。得点と偏差値を直接換算できる教材ではありません。</p><p><a href="atlas.html">地図帳</a>　<a href="workbook.html">確認問題</a>　<a href="anki/README.md">Anki</a>　<a href="timeline.md">年表</a></p><p><a href="mock-01.html">総合問題1</a>　<a href="mock-02.html">総合問題2</a>　<a href="mock-03.html">総合問題3</a></p><label for="search">本文内の絞り込み（例：地租改正）</label><input id="search" type="search" placeholder="空欄で全単元を表示"><h2 id="contents">単元一覧</h2><nav>'+''.join(navigation)+'</nav></header>'
-    save(ROOT/'index.html',document('社会を、つながりから学ぶ — 中学社会3年間',header+'<main>'+''.join(articles)+'</main><footer>本文・問題は独自作成。<a href="SOURCES.md">出典と更新方針</a> / <a href="QA_REPORT.md">検証記録</a>。HTMLは展開後、ネット接続なしで読めます。ブラウザーの印刷で紙へ出力できます。</footer>',True))
+    for stem in ('timeline','glossary','SOURCES','coverage'):
+        text=(ROOT/(stem+'.md')).read_text()
+        fragment=md_html(text,vocab)
+        fragment=re.sub(r'href="textbook/([FGHC]\d{2})\.md"',r'href="textbook/\1.html"',fragment).replace('href="atlas.md"','href="atlas.html"')
+        save(ROOT/(stem+'.html'),document(stem,'<main><a href="index.html">単元一覧</a>'+fragment+'</main>'))
+    header=f'<header><p class="meta">中学校3年間の社会・確認基準日 {REVIEW_DATE}</p><h1>社会を、つながりから学ぶ</h1><p>予備知識ゼロから、地理・歴史・公民を読み、思い出し、資料で確かめる。</p><p>{len(lessons)}単元 / {len(cards):,}枚のAnki / 確認問題{stats["lesson_questions"]}問 / 総合問題3回</p><p class="notice">初めて使うときは<a href="study-guide.html">学び方と資料の読み方</a>から。得点と偏差値を直接換算できる教材ではありません。</p><p><a href="atlas.html">地図帳</a>　<a href="workbook.html">確認問題</a>　<a href="anki/README.html">Anki</a>　<a href="timeline.html">年表</a></p><p><a href="mock-01.html">総合問題1</a>　<a href="mock-02.html">総合問題2</a>　<a href="mock-03.html">総合問題3</a></p><label for="search">本文内の絞り込み（例：地租改正）</label><input id="search" type="search" placeholder="空欄で全単元を表示"><h2 id="contents">単元一覧</h2><nav>'+''.join(navigation)+'</nav></header>'
+    save(ROOT/'index.html',document('社会を、つながりから学ぶ — 中学社会3年間',header+'<main>'+''.join(articles)+'</main><footer>本文・問題は独自作成。<a href="SOURCES.html">出典と更新方針</a> / <a href="QA_REPORT.md">検証記録</a>。HTMLは展開後、ネット接続なしで読めます。ブラウザーの印刷で紙へ出力できます。</footer>',True))
     readme=f'''# 中学校3年間の社会 — 予備知識ゼロから
 
 本文を読み、用語を思い出し、地図・資料・記述へつなぐ教材です。高校受験を見据え、偏差値65程度の高校を目標とする人の学習にも使えるよう、理由・比較・初見資料を扱います。**習得だけで特定の偏差値や合格を保証するものではありません。**
@@ -413,6 +433,8 @@ pip install -r social-studies/requirements.txt
 python social-studies/tools/build.py
 ```
 
+検証済みパッケージを作る場合は、追加で `anki` と `playwright` をインストールし、`python -m playwright install chromium` の後に `python social-studies/tools/build.py --verify-anki --verify-render` を実行します。今回の検証環境は `anki 26.9.3`、`playwright 1.63.0` です。これらは利用者が教材を読むための依存関係ではありません。
+
 初回はNatural Earthのpublic-domain地図データを取得します。ネットワークが必要なのはこの地図取得で、生成後のHTMLとAnkiの学習にネット接続は不要です。地図キャッシュはホームディレクトリの `.cache/social-studies-naturalearth/` に保存し、配布物へ含めません。
 
 本文の修正では既存カードIDを保ちます。APKGのノートGUIDはIDから決まり、内容と無関係に毎回新しく作り直すことを避けています。元の数字・計算条件を変えたときは、解答・採点基準・検証も見直します。
@@ -421,7 +443,7 @@ python social-studies/tools/build.py
 
 オリジナルの本文・問題・生成コードはリポジトリの[Apache License 2.0](LICENSE)に従います。加工した地図の原図はNatural Earthのpublic-domainデータです。参照先の資料を丸ごと転載したものではなく、参照先の著作物にはそれぞれの条件が適用されます。フォントファイル、個人の学習履歴、音声は配布しません。
 
-内容確認の基準日は2026年9月29日。制度・統計・入試の実際の手続きは、必要に応じ最新の公式資料で確認します。架空の数値を実測値として引用しないでください。外部の教員や試験団体による査読・難易度標準化を受けた教材ではありません。
+内容確認の基準日は2026年9月30日。制度・統計・入試の実際の手続きは、必要に応じ最新の公式資料で確認します。架空の数値を実測値として引用しないでください。外部の教員や試験団体による査読・難易度標準化を受けた教材ではありません。
 '''
     save(ROOT/'README.md',readme)
     if (ROOT.parent/'LICENSE').exists(): (ROOT/'LICENSE').write_bytes((ROOT.parent/'LICENSE').read_bytes())
@@ -436,10 +458,26 @@ python social-studies/tools/build.py
     assert sum(CLIMATE['A']['rain'])>sum(CLIMATE['B']['rain'])
     report={'review_date':REVIEW_DATE,'statistics':stats,'anki':anki_report,'maps':asset_report,'checks':['76 expected lessons and order','unique lesson/card identifiers and normalized keywords','prerequisite references and acyclic graph','source reference IDs resolved','3 answered questions per lesson','3 assessments x 24 questions; each exactly 100 points','CSV/TSV exact round-trip including HTML and tags','APKG ZIP CRC and SQLite integrity; note/card/GUID counts','keyword-only question template','ruby boundary and nesting regression checks','worked arithmetic and mock-exam numerical spot checks'],'limitations':['No desktop/mobile Anki GUI import or synchronization was tested by this builder.','No external subject-expert peer review or exam-score standardization.','URL listings include reference landing pages, not per-sentence evidence or a guarantee of future availability.','No PDF is generated. Print the offline HTML or use the Markdown files.']}
     save(ROOT/'BUILD_REPORT.json',json.dumps(report,ensure_ascii=False,indent=2))
+    if '--verify-anki' in sys.argv:
+        import check_import
+        if check_import.main()!=0:
+            raise RuntimeError('Anki backend integration test failed')
+        report['anki_backend']=json.loads((ROOT/'ANKI_IMPORT_TEST.json').read_text())
+    else:
+        save(ROOT/'ANKI_IMPORT_TEST.json',json.dumps({'backend_test':'not_run_for_this_build','artifact_sha256':hashlib.sha256((ROOT/'anki/social-studies.apkg').read_bytes()).hexdigest()},indent=2))
+    if '--verify-render' in sys.argv:
+        import check_render
+        report['browser']=check_render.run(ROOT)
+    else:
+        save(ROOT/'BROWSER_TEST.json',json.dumps({'status':'not_run_for_this_build'},indent=2))
     qa=['# 検証記録',f'確認基準日：{REVIEW_DATE}','この記録は生成プログラムが実際に成功した検査と、その限界を示します。外部の専門家の査読や、模試集団での難易度調査を意味しません。','## 収録数']
     qa += [f'- {k}: {v}' for k,v in stats.items()]
     qa += ['## 自動検査']+[f'- {x}' for x in report['checks']]
     qa += ['## Ankiの検証範囲',f'APKG内のSQLiteデータベースを開き、ノート数・カード数・一意なGUIDがそれぞれ{len(cards):,}件で一致し、整合性検査が成功しました。CSV・TSVを再度読み込み、全フィールドの一致を確認しました。','これはデスクトップ・スマートフォンのAnki画面での操作や同期の試験ではありません。更新前にはバックアップを取り、初回は数枚を開いてルビと裏面を確認してください。','## 内容面の点検','本文では、鎖国と断交、署名と発効、公布と施行、総議員と出席議員、割合と実数、政府の立場と現実の管理などを区別して記述しています。歴史の説明を一つの原因や一人の功績だけへ単純化しないよう注意しています。','計算例・グラフの架空データを明示し、総合問題の配点合計と基本計算を確認しました。個々の文の正確さを自動検査だけで保証することはできません。誤りや読みにくさが見つかった場合は、原稿を直して再生成してください。','## 地図',json.dumps(asset_report,ensure_ascii=False),'原図を47都道府県のコードで抽出したことを検査しています。地図は位置学習用で、一部の離島を省略します。国境・領有権の厳密な判断の資料には用いません。','## 配布形式','Markdown・オフラインHTML・APKG・CSV・TSV・ZIPを生成します。PDFは含みません。印刷にはブラウザーの印刷機能を利用できます。フォントファイルと個人データは含みません。']
+    if report.get('anki_backend',{}).get('backend_test')=='passed':
+        qa += ['## Anki実装による取り込み試験', 'Anki Python '+report['anki_backend']['anki_python_version']+' の実際の取り込み処理を、個人データを含まない一時コレクションで実行しました。初回取り込み、同一APKGの再取り込み、内容変更を含む更新、試験用の復習状態の保持を検査しました。詳しい対象ファイルと結果は ANKI_IMPORT_TEST.json に記録しています。デスクトップ画面・実機スマートフォン・同期の試験ではありません。']
+    if report.get('browser',{}).get('status')=='passed':
+        qa += ['## ブラウザー表示試験', 'Chromiumでデスクトップ幅・スマートフォン幅を確認し、単元数、表、検索、解答の開閉、画像読込、横方向のはみ出し、印刷時の解答表示を検査しました。実機のSafariやAnkiアプリの画面を試験したものではありません。詳細は BROWSER_TEST.json にあります。']
     save(ROOT/'QA_REPORT.md','\n\n'.join(qa))
     # Verify all generated local links point to an existing file; anchors stay within HTML.
     missing=[]
@@ -463,7 +501,7 @@ python social-studies/tools/build.py
     archive=package_dir/'social-studies-complete.zip'
     with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
         for p in files:
-            info=zipfile.ZipInfo('social-studies/'+str(p.relative_to(ROOT)),date_time=(2026,9,29,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED
+            info=zipfile.ZipInfo('social-studies/'+str(p.relative_to(ROOT)),date_time=(2026,9,30,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED
             z.writestr(info,p.read_bytes())
     with zipfile.ZipFile(archive) as z:
         assert z.testzip() is None

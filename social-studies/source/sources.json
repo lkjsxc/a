@@ -1,60 +1,267 @@
 {
-  "review_date": "2026-09-29",
+  "review_date": "2026-09-30",
   "scope": "学習範囲の照合、制度・日付の確認、発展学習のための参照先。本文と問題は独自に執筆しており、リンク先の文章や入試問題を転載したものではない。入口ページを含むため、各リンクが単元中の全ての文を直接裏付けるという意味ではない。",
   "revision_policy": "変わりやすい制度は原則として仕組みを学び、最新の金額・人数・加盟状況などは公式資料で確認する。教材内の計算用データは、実測値と明記したもの以外は学習用の架空データ。",
   "sources": {
-    "MEXT": {"title":"文部科学省：中学校学習指導要領・社会編","url":"https://www.mext.go.jp/a_menu/shotou/new-cs/1387016.htm","detail_url":"https://www.mext.go.jp/content/20240919-mxt_kyoiku01-100002608.pdf","note":"地理的・歴史的・公民的分野の範囲を照合。配当学年と単元順は教材独自の目安。"},
-    "GSI": {"title":"国土地理院：子どものページ・地理院地図","url":"https://www.gsi.go.jp/KIDS/","detail_url":"https://maps.gsi.go.jp/","note":"縮尺、等高線、地図記号、地形、位置の学習。"},
-    "JCG": {"title":"海上保安庁：日本の領海等概念図","url":"https://www1.kaiho.mlit.go.jp/JODC/ryokai/ryokai.html","note":"領海・接続水域・排他的経済水域の区別。"},
-    "MOFA_WORLD": {"title":"外務省：国・地域","url":"https://www.mofa.go.jp/mofaj/area/index.html","note":"国の基礎情報、首都、外交関係の照合入口。"},
-    "MOFA_TERRITORY": {"title":"外務省：日本の領土をめぐる情勢","url":"https://www.mofa.go.jp/mofaj/territory/index.html","note":"日本政府の立場を確認する資料。本文では政府の立場と現実の管理・他国側の主張を区別する。"},
-    "STAT": {"title":"総務省統計局：なるほど統計学園","url":"https://www.stat.go.jp/naruhodo/index.html","note":"割合・人口・統計の読み方。計算練習の架空値を実際の統計と混同しない。"},
-    "JMA": {"title":"気象庁：日本の天候の特徴","url":"https://www.data.jma.go.jp/cpd/j_climate/japan_climate.html","note":"日本の気候と季節変化。教材の雨温図は比較練習用の架空モデル。"},
-    "MAFF": {"title":"農林水産省：食料自給率とは","url":"https://www.maff.go.jp/j/zyukyu/zikyu_ritu/012.html","note":"カロリーベースと生産額ベースの違い。最新の年度値は公式発表を確認する。"},
-    "FISHERY": {"title":"水産庁：水産白書","url":"https://www.jfa.maff.go.jp/j/kikaku/wpaper/","note":"漁業・養殖・資源管理を学ぶための公式資料入口。"},
-    "METI_ENERGY": {"title":"資源エネルギー庁：かがやけ！みんなのエネルギー","url":"https://www.enecho.meti.go.jp/category/others/kids/","note":"発電方法、省エネルギー、エネルギーの安定供給。"},
-    "MLIT": {"title":"国土交通省：交通・物流・地域政策の資料","url":"https://www.mlit.go.jp/","note":"交通や国土政策を調べる公式入口。教材は現在の路線や運行予定を案内するものではない。"},
-    "DISASTER": {"title":"内閣府：みんなで防災","url":"https://www.bousai.go.jp/kyoiku/keigen/index.html","detail_url":"https://disaportal.gsi.go.jp/","note":"自助・共助・公助と災害への備え。実際の避難では自治体の最新情報を使う。"},
-    "OKINAWA": {"title":"沖縄県：県のあらまし","url":"https://www.pref.okinawa.jp/kensei/kennoaramashi/index.html","note":"沖縄の歴史・地理・文化と現在の課題を調べる入口。"},
-    "AINU": {"title":"北海道アイヌ協会：アイヌ民族について","url":"https://www.ainu-assn.or.jp/ainupeople/","note":"アイヌの歴史・文化・現在の生活を、当事者の資料でも確認する。"},
-    "ASEAN": {"title":"ASEAN：About ASEAN","url":"https://asean.org/about-asean/","note":"地域協力の目的を確認。加盟国数を古い数字で固定しない。"},
-    "EU": {"title":"欧州連合：Aims and values","url":"https://european-union.europa.eu/principles-countries-history/principles-and-values/aims-and-values_en","note":"EUの統合・協力の目的。EU加盟とユーロ使用を区別する。"},
-    "HISTORY": {"title":"Web Japan・Kids Web Japan：日本の歴史","url":"https://web-japan.org/kidsweb/ja/explore/history/index.html","note":"歴史の流れの補助資料。年代に研究上の幅がある事柄は本文で注記する。"},
-    "REKIHAKU": {"title":"国立歴史民俗博物館：小・中・高校生向け学習資料","url":"https://www.rekihaku.ac.jp/learning/for_student/","note":"暮らし・政治・交流・信仰などの観点で歴史を読む。"},
-    "WORLD_HISTORY": {"title":"メトロポリタン美術館：美術史・時代解説","url":"https://www.metmuseum.org/essays","note":"ルネサンスなど世界史と美術の関連を調べる入口。本文の文章は転載していない。"},
-    "UK_PARLIAMENT": {"title":"英国議会：Bill of Rights 1689","url":"https://www.parliament.uk/about/living-heritage/evolutionofparliament/parliamentaryauthority/revolution/overview/billofrights/","note":"名誉革命後の議会と王権の関係。"},
-    "US_DECLARATION": {"title":"米国国立公文書館：独立宣言原文","url":"https://www.archives.gov/founding-docs/declaration-transcript","note":"1776年の独立と権利の理念。理念と当時の奴隷制などの現実を区別する。"},
-    "ARCHIVES": {"title":"国立公文書館：日本のあゆみ","url":"https://www.archives.go.jp/ayumi/table.html","note":"近現代の制度・出来事の日付。明治初期までの旧暦表記と西暦換算に注意する。"},
-    "NDL_MODERN": {"title":"国立国会図書館：史料にみる日本の近代","url":"https://www.ndl.go.jp/modern/","note":"近現代の政治・社会の史料を調べる。教材の史料風の問題文は原史料の引用ではなく独自の要約。"},
-    "UN_HISTORY": {"title":"国際連合：History of the United Nations","url":"https://www.un.org/en/about-us/history-of-the-un","note":"国際連盟と国際連合、1945年の設立の歴史。"},
-    "USHMM": {"title":"米国ホロコースト記念博物館：Introduction to the Holocaust","url":"https://encyclopedia.ushmm.org/content/en/article/introduction-to-the-holocaust","note":"ナチスによるユダヤ人迫害・大量虐殺の歴史。"},
-    "CONST": {"title":"国立国会図書館：日本国憲法の誕生・憲法全文","url":"https://www.ndl.go.jp/constitution/etc/j01.html","note":"主権・人権・国会・内閣・司法・地方自治・改正手続きの条文確認。"},
-    "DIET": {"title":"参議院：国会のしくみと法律ができるまで","url":"https://www.sangiin.go.jp/japanese/aramashi/houki.html","note":"二院制、国会の種類、法律案・予算・首相指名などの手続き。"},
-    "ELECTION": {"title":"参議院：選挙制度","url":"https://www.sangiin.go.jp/japanese/aramashi/senkyo.html","note":"選挙権・被選挙権、衆参の選挙制度。手続きや直近の選挙は選挙管理委員会の最新案内を確認する。"},
-    "LOCAL_GOV": {"title":"東京都議会：東京都議会キッズ","url":"https://www.gikai.metro.tokyo.lg.jp/kids/","note":"地方議会の役割と身近な政治。国の議院内閣制との違いを確認する。"},
-    "MOJ": {"title":"法務省：民法の成年年齢引下げQ&A","url":"https://www.moj.go.jp/MINJI/minji07_00218.html","note":"成年18歳、契約、未成年者取消権、裁判員の対象年齢の確認。"},
-    "CAA": {"title":"消費者庁：18歳から大人","url":"https://www.caa.go.jp/policies/policy/consumer_education/consumer_education/lower_the_age_of_adulthood/","note":"成年年齢と契約の責任、消費者教育。"},
-    "CONSUMER": {"title":"消費者庁：特定商取引法ガイド","url":"https://www.no-trouble.caa.go.jp/what/","note":"クーリング・オフ、通信販売などの取引ごとの違い。実際の契約は条件を確認して相談する。"},
-    "COURTS": {"title":"裁判所：裁判手続の種類","url":"https://www.courts.go.jp/saiban/syurui/index.html","note":"民事・刑事・行政などの裁判の違い。"},
-    "SAIBANIN": {"title":"裁判所：裁判員制度について","url":"https://www.saibanin.courts.go.jp/introduction/index.html","note":"対象となる刑事事件、参加と判断の仕組み。"},
-    "JFTC": {"title":"公正取引委員会：こどもホームページ","url":"https://www.jftc.go.jp/kids/","note":"市場の競争、独占禁止法、公正取引委員会の役割。"},
-    "BOJ": {"title":"日本銀行：教えて！にちぎん","url":"https://www.boj.or.jp/about/education/oshiete/index.htm","note":"貨幣・銀行・金融政策・物価・為替。特定の政策金利は固定して記載しない。"},
-    "MOF_FINANCE": {"title":"財務省：日本の財政を考える","url":"https://www.mof.go.jp/zaisei/index.htm","note":"予算・税・国債など。教材の税率計算表と予算表は実際の税制・予算ではない。"},
-    "MHLW_LABOR": {"title":"厚生労働省：労働基準","url":"https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/index.html","note":"労働条件・最低賃金・労働者保護。実際の適用額や相談は最新の公的案内を確認する。"},
-    "MHLW_WELFARE": {"title":"厚生労働省：社会保障とは何か","url":"https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/shakaihoshou/index.html","note":"社会保険・社会福祉・公的扶助・保健医療等の制度。"},
-    "MOFA_TRADE": {"title":"外務省：経済連携協定・自由貿易協定","url":"https://www.mofa.go.jp/mofaj/gaiko/fta/index.html","note":"FTAとEPAの目的と違い。締結状況は更新される。"},
-    "WTO": {"title":"WTO：What is the WTO?","url":"https://www.wto.org/english/thewto_e/whatis_e/whatis_e.htm","note":"世界貿易機関の役割。"},
-    "UN_ORG": {"title":"国際連合：Main bodies","url":"https://www.un.org/en/about-us/main-bodies","note":"総会・安全保障理事会・国際司法裁判所などの役割と構成。"},
-    "UNHCR": {"title":"UNHCR：Refugees","url":"https://www.unhcr.org/about-unhcr/who-we-protect/refugees","note":"難民の定義と保護。移住者や国内避難民との区別。"},
-    "ICJ": {"title":"国際司法裁判所：How the Court works","url":"https://www.icj-cij.org/how-the-court-works","note":"国家間の紛争と裁判管轄の条件。"},
-    "UN_SDG": {"title":"国際連合：Sustainable Development Goals","url":"https://sdgs.un.org/goals","note":"2015年採択、2030年へ向けた17の目標。"},
-    "UNFCCC": {"title":"国連気候変動枠組条約：The Paris Agreement","url":"https://unfccc.int/process-and-meetings/the-paris-agreement","note":"パリ協定の気温目標、各国の取り組みと更新。"},
-    "MOE": {"title":"環境省：こども環境白書","url":"https://www.env.go.jp/policy/hakusyo/kodomo.html","note":"公害・気候変動・資源循環など。最新の排出量や政策目標は各年の資料を確認する。"},
-    "MOFA_ODA": {"title":"外務省：ODAとは","url":"https://www.mofa.go.jp/mofaj/gaiko/oda/about/index.html","note":"政府開発援助と国際協力の仕組み。"}
+    "MEXT": {
+      "title": "文部科学省：中学校学習指導要領・社会編",
+      "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1387016.htm",
+      "detail_url": "https://www.mext.go.jp/content/20240919-mxt_kyoiku01-100002608.pdf",
+      "note": "地理的・歴史的・公民的分野の範囲を照合。配当学年と単元順は教材独自の目安。"
+    },
+    "GSI": {
+      "title": "国土地理院：子どものページ・地理院地図",
+      "url": "https://www.gsi.go.jp/KIDS/",
+      "detail_url": "https://maps.gsi.go.jp/",
+      "note": "縮尺、等高線、地図記号、地形、位置の学習。"
+    },
+    "JCG": {
+      "title": "海上保安庁：日本の領海等概念図",
+      "url": "https://www1.kaiho.mlit.go.jp/JODC/ryokai/ryokai.html",
+      "note": "領海・接続水域・排他的経済水域の区別。"
+    },
+    "MOFA_WORLD": {
+      "title": "外務省：国・地域",
+      "url": "https://www.mofa.go.jp/mofaj/area/index.html",
+      "note": "国の基礎情報、首都、外交関係の照合入口。"
+    },
+    "MOFA_TERRITORY": {
+      "title": "外務省：日本の領土をめぐる情勢",
+      "url": "https://www.mofa.go.jp/mofaj/territory/index.html",
+      "note": "日本政府の立場を確認する資料。本文では政府の立場と現実の管理・他国側の主張を区別する。"
+    },
+    "STAT": {
+      "title": "総務省統計局：なるほど統計学園",
+      "url": "https://www.stat.go.jp/naruhodo/index.html",
+      "note": "割合・人口・統計の読み方。計算練習の架空値を実際の統計と混同しない。"
+    },
+    "JMA": {
+      "title": "気象庁：日本の天候の特徴",
+      "url": "https://www.data.jma.go.jp/cpd/j_climate/japan_climate.html",
+      "note": "日本の気候と季節変化。教材の雨温図は比較練習用の架空モデル。"
+    },
+    "MAFF": {
+      "title": "農林水産省：食料自給率とは",
+      "url": "https://www.maff.go.jp/j/zyukyu/zikyu_ritu/012.html",
+      "note": "カロリーベースと生産額ベースの違い。最新の年度値は公式発表を確認する。"
+    },
+    "FISHERY": {
+      "title": "水産庁：水産白書",
+      "url": "https://www.jfa.maff.go.jp/j/kikaku/wpaper/",
+      "note": "漁業・養殖・資源管理を学ぶための公式資料入口。"
+    },
+    "METI_ENERGY": {
+      "title": "資源エネルギー庁：かがやけ！みんなのエネルギー",
+      "url": "https://www.enecho.meti.go.jp/category/others/kids/",
+      "note": "発電方法、省エネルギー、エネルギーの安定供給。"
+    },
+    "MLIT": {
+      "title": "国土交通省：交通・物流・地域政策の資料",
+      "url": "https://www.mlit.go.jp/",
+      "note": "交通や国土政策を調べる公式入口。教材は現在の路線や運行予定を案内するものではない。"
+    },
+    "DISASTER": {
+      "title": "内閣府：みんなで防災",
+      "url": "https://www.bousai.go.jp/kyoiku/keigen/index.html",
+      "detail_url": "https://disaportal.gsi.go.jp/",
+      "note": "自助・共助・公助と災害への備え。実際の避難では自治体の最新情報を使う。"
+    },
+    "OKINAWA": {
+      "title": "沖縄県：県のあらまし",
+      "url": "https://www.pref.okinawa.jp/kensei/kennoaramashi/index.html",
+      "note": "沖縄の歴史・地理・文化と現在の課題を調べる入口。"
+    },
+    "AINU": {
+      "title": "北海道アイヌ協会：アイヌ民族について",
+      "url": "https://www.ainu-assn.or.jp/ainupeople/",
+      "note": "アイヌの歴史・文化・現在の生活を、当事者の資料でも確認する。"
+    },
+    "ASEAN": {
+      "title": "ASEAN：About ASEAN",
+      "url": "https://asean.org/about-asean/",
+      "note": "地域協力の目的を確認。加盟国数を古い数字で固定しない。"
+    },
+    "EU": {
+      "title": "欧州連合：Aims and values",
+      "url": "https://european-union.europa.eu/principles-countries-history/principles-and-values/aims-and-values_en",
+      "note": "EUの統合・協力の目的。EU加盟とユーロ使用を区別する。"
+    },
+    "HISTORY": {
+      "title": "Web Japan・Kids Web Japan：日本の歴史",
+      "url": "https://web-japan.org/kidsweb/ja/explore/history/index.html",
+      "note": "歴史の流れの補助資料。年代に研究上の幅がある事柄は本文で注記する。"
+    },
+    "REKIHAKU": {
+      "title": "国立歴史民俗博物館：小・中・高校生向け学習資料",
+      "url": "https://www.rekihaku.ac.jp/learning/for_student/",
+      "note": "暮らし・政治・交流・信仰などの観点で歴史を読む。"
+    },
+    "WORLD_HISTORY": {
+      "title": "メトロポリタン美術館：美術史・時代解説",
+      "url": "https://www.metmuseum.org/essays",
+      "note": "ルネサンスなど世界史と美術の関連を調べる入口。本文の文章は転載していない。"
+    },
+    "UK_PARLIAMENT": {
+      "title": "英国議会：Bill of Rights 1689",
+      "url": "https://www.parliament.uk/about/living-heritage/evolutionofparliament/parliamentaryauthority/revolution/overview/billofrights/",
+      "note": "名誉革命後の議会と王権の関係。"
+    },
+    "US_DECLARATION": {
+      "title": "米国国立公文書館：独立宣言原文",
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "note": "1776年の独立と権利の理念。理念と当時の奴隷制などの現実を区別する。"
+    },
+    "ARCHIVES": {
+      "title": "国立公文書館：日本のあゆみ",
+      "url": "https://www.archives.go.jp/ayumi/table.html",
+      "note": "近現代の制度・出来事の日付。明治初期までの旧暦表記と西暦換算に注意する。"
+    },
+    "NDL_MODERN": {
+      "title": "国立国会図書館：史料にみる日本の近代",
+      "url": "https://www.ndl.go.jp/modern/",
+      "note": "近現代の政治・社会の史料を調べる。教材の史料風の問題文は原史料の引用ではなく独自の要約。"
+    },
+    "UN_HISTORY": {
+      "title": "国際連合：History of the United Nations",
+      "url": "https://www.un.org/en/about-us/history-of-the-un",
+      "note": "国際連盟と国際連合、1945年の設立の歴史。"
+    },
+    "USHMM": {
+      "title": "米国ホロコースト記念博物館：Introduction to the Holocaust",
+      "url": "https://encyclopedia.ushmm.org/content/en/article/introduction-to-the-holocaust",
+      "note": "ナチスによるユダヤ人迫害・大量虐殺の歴史。"
+    },
+    "CONST": {
+      "title": "国立国会図書館：日本国憲法の誕生・憲法全文",
+      "url": "https://www.ndl.go.jp/constitution/etc/j01.html",
+      "note": "主権・人権・国会・内閣・司法・地方自治・改正手続きの条文確認。"
+    },
+    "DIET": {
+      "title": "参議院：国会のしくみと法律ができるまで",
+      "url": "https://www.sangiin.go.jp/japanese/aramashi/",
+      "note": "二院制、国会の種類、法律案・予算・首相指名などの手続き。"
+    },
+    "ELECTION": {
+      "title": "参議院：選挙制度",
+      "url": "https://www.sangiin.go.jp/japanese/aramashi/",
+      "note": "選挙権・被選挙権、衆参の選挙制度。手続きや直近の選挙は選挙管理委員会の最新案内を確認する。"
+    },
+    "LOCAL_GOV": {
+      "title": "東京都議会：議会のしくみ・子供向け学習資料の入口",
+      "url": "https://www.gikai.metro.tokyo.lg.jp/",
+      "note": "地方議会の役割と身近な政治。国の議院内閣制との違いを確認する。"
+    },
+    "MOJ": {
+      "title": "法務省：民法の成年年齢引下げQ&A",
+      "url": "https://www.moj.go.jp/MINJI/minji07_00218.html",
+      "note": "成年18歳、契約、未成年者取消権、裁判員の対象年齢の確認。"
+    },
+    "CAA": {
+      "title": "消費者庁：18歳から大人",
+      "url": "https://www.caa.go.jp/policies/policy/consumer_education/consumer_education/lower_the_age_of_adulthood/",
+      "note": "成年年齢と契約の責任、消費者教育。"
+    },
+    "CONSUMER": {
+      "title": "消費者庁：特定商取引法ガイド",
+      "url": "https://www.no-trouble.caa.go.jp/what/",
+      "note": "クーリング・オフ、通信販売などの取引ごとの違い。実際の契約は条件を確認して相談する。"
+    },
+    "COURTS": {
+      "title": "裁判所：裁判手続の種類",
+      "url": "https://www.courts.go.jp/saiban/syurui/index.html",
+      "note": "民事・刑事・行政などの裁判の違い。"
+    },
+    "SAIBANIN": {
+      "title": "裁判所：裁判員制度について",
+      "url": "https://www.saibanin.courts.go.jp/introduction/index.html",
+      "note": "対象となる刑事事件、参加と判断の仕組み。"
+    },
+    "JFTC": {
+      "title": "公正取引委員会：こどもホームページ",
+      "url": "https://www.jftc.go.jp/kids/",
+      "note": "市場の競争、独占禁止法、公正取引委員会の役割。"
+    },
+    "BOJ": {
+      "title": "日本銀行：教えて！にちぎん",
+      "url": "https://www.boj.or.jp/about/education/oshiete/index.htm",
+      "note": "貨幣・銀行・金融政策・物価・為替。特定の政策金利は固定して記載しない。"
+    },
+    "MOF_FINANCE": {
+      "title": "財務省：日本の財政を考える",
+      "url": "https://www.mof.go.jp/zaisei/index.htm",
+      "note": "予算・税・国債など。教材の税率計算表と予算表は実際の税制・予算ではない。"
+    },
+    "MHLW_LABOR": {
+      "title": "厚生労働省：労働基準",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/index.html",
+      "note": "労働条件・最低賃金・労働者保護。実際の適用額や相談は最新の公的案内を確認する。"
+    },
+    "MHLW_WELFARE": {
+      "title": "厚生労働省：社会保障とは何か",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/shakaihoshou/index.html",
+      "note": "社会保険・社会福祉・公的扶助・保健医療等の制度。"
+    },
+    "MOFA_TRADE": {
+      "title": "外務省：経済連携協定・自由貿易協定",
+      "url": "https://www.mofa.go.jp/mofaj/gaiko/fta/index.html",
+      "note": "FTAとEPAの目的と違い。締結状況は更新される。"
+    },
+    "WTO": {
+      "title": "WTO：What is the WTO?",
+      "url": "https://www.wto.org/english/thewto_e/whatis_e/whatis_e.htm",
+      "note": "世界貿易機関の役割。"
+    },
+    "UN_ORG": {
+      "title": "国際連合：Main bodies",
+      "url": "https://www.un.org/en/about-us/main-bodies",
+      "note": "総会・安全保障理事会・国際司法裁判所などの役割と構成。"
+    },
+    "UNHCR": {
+      "title": "UNHCR：Refugees",
+      "url": "https://www.unhcr.org/about-unhcr/who-we-protect/refugees",
+      "note": "難民の定義と保護。移住者や国内避難民との区別。"
+    },
+    "ICJ": {
+      "title": "国際司法裁判所：How the Court works",
+      "url": "https://www.icj-cij.org/how-the-court-works",
+      "note": "国家間の紛争と裁判管轄の条件。"
+    },
+    "UN_SDG": {
+      "title": "国際連合：Sustainable Development Goals",
+      "url": "https://sdgs.un.org/goals",
+      "note": "2015年採択、2030年へ向けた17の目標。"
+    },
+    "UNFCCC": {
+      "title": "国連気候変動枠組条約：The Paris Agreement",
+      "url": "https://unfccc.int/process-and-meetings/the-paris-agreement",
+      "note": "パリ協定の気温目標、各国の取り組みと更新。"
+    },
+    "MOE": {
+      "title": "環境省：こども環境白書",
+      "url": "https://www.env.go.jp/policy/hakusyo/kodomo.html",
+      "note": "公害・気候変動・資源循環など。最新の排出量や政策目標は各年の資料を確認する。"
+    },
+    "MOFA_ODA": {
+      "title": "外務省：ODAとは",
+      "url": "https://www.mofa.go.jp/mofaj/gaiko/oda/about/index.html",
+      "note": "政府開発援助と国際協力の仕組み。"
+    }
   },
   "further_study": [
-    {"title":"大阪府：公立高等学校入学者選抜の情報","url":"https://www.pref.osaka.lg.jp/o180040/kotogakko/gakuji-g3/index.html","note":"公式の過去問題・解答・募集要項を確認する入口。教材の総合問題は大阪府の過去問ではなく独自問題。"},
-    {"title":"Anki公式マニュアル：テキストファイルの取り込み","url":"https://docs.ankiweb.net/importing/text-files.html","note":"UTF-8、HTML、列の対応、タグ、重複・更新の挙動。"},
-    {"title":"Anki公式マニュアル：パッケージの取り込み","url":"https://docs.ankiweb.net/importing/packaged-decks.html","note":".apkgと更新時の扱い。CSVと同じカードを二重に取り込まない。"}
+    {
+      "title": "大阪府：公立高等学校入学者選抜の情報",
+      "url": "https://www.pref.osaka.lg.jp/o180040/kotogakko/gakuji-g3/index.html",
+      "note": "公式の過去問題・解答・募集要項を確認する入口。教材の総合問題は大阪府の過去問ではなく独自問題。"
+    },
+    {
+      "title": "Anki公式マニュアル：テキストファイルの取り込み",
+      "url": "https://docs.ankiweb.net/importing/text-files.html",
+      "note": "UTF-8、HTML、列の対応、タグ、重複・更新の挙動。"
+    },
+    {
+      "title": "Anki公式マニュアル：パッケージの取り込み",
+      "url": "https://docs.ankiweb.net/importing/packaged-decks.html",
+      "note": ".apkgと更新時の扱い。CSVと同じカードを二重に取り込まない。"
+    }
   ]
 }

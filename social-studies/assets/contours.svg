@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430" role="img" aria-label="等高線の模式図。西側Aは東側Bより等高線の間隔が狭い。">
+<title>等高線の模式図。西側Aは東側Bより等高線の間隔が狭い。</title>
+<style>text{font-family:"Noto Sans CJK JP","Yu Gothic",sans-serif;fill:currentColor;font-size:14px}path,line,rect,circle,polyline{stroke:currentColor;fill:none} .label{font-size:12px;font-weight:bold;paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round}</style>
+<text x="25" y="28" style="font-size:20px">等高線の間隔と斜面（模式図・架空地形）</text>
+<ellipse cx="375.0" cy="210" rx="275.0" ry="145" fill="none" stroke="currentColor" stroke-width="1.8"/>
+<text x="375.0" y="59" text-anchor="middle">100m</text>
+<ellipse cx="345.0" cy="210" rx="225.0" ry="119" fill="none" stroke="currentColor" stroke-width="1.8"/>
+<text x="345.0" y="85" text-anchor="middle">200m</text>
+<ellipse cx="315.0" cy="210" rx="175.0" ry="93" fill="none" stroke="currentColor" stroke-width="1.8"/>
+<text x="315.0" y="111" text-anchor="middle">300m</text>
+<ellipse cx="285.0" cy="210" rx="125.0" ry="67" fill="none" stroke="currentColor" stroke-width="1.8"/>
+<text x="285.0" y="137" text-anchor="middle">400m</text>
+<text x="52" y="215" style="font-size:20px">A</text>
+<text x="676" y="215" style="font-size:20px">B</text>
+<line x1="75" y1="210" x2="685" y2="210" stroke-dasharray="5 5"/>
+<line x1="690" y1="110" x2="690" y2="70"/><path d="M685,80 L690,70 L695,80"/><text x="682" y="57">北</text>
+<text x="25" y="395">等高線の標高差は100m。A側は同じ標高差に対する水平距離が短い。</text>
+<text x="25" y="416">水平距離の縮尺は指定していません。この図から実距離や勾配の数値は求められません。</text>
+</svg>

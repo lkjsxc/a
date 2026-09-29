@@ -1,0 +1,179 @@
+{
+  "review_date": "2026-09-30",
+  "statistics": {
+    "lessons": 76,
+    "lesson_counts": {
+      "foundation": 4,
+      "geography": 27,
+      "history": 27,
+      "civics": 18
+    },
+    "lesson_cards": 1246,
+    "atlas_cards": 47,
+    "anki_cards": 1293,
+    "lesson_questions": 228,
+    "worked_examples": 12,
+    "mock_exams": 3,
+    "mock_questions": 72,
+    "timeline_entries": 119,
+    "reading_characters": 64643
+  },
+  "anki": {
+    "notes": 1293,
+    "cards": 1293,
+    "unique_guids": 1293,
+    "csv_roundtrip": true,
+    "tsv_roundtrip": true,
+    "sqlite_integrity": "ok",
+    "front_template": "{{Front}}",
+    "desktop_gui_import_tested": false
+  },
+  "maps": {
+    "world_countries": 177,
+    "japan_prefectures": 47,
+    "source": "Natural Earth 110m admin0 / 10m admin1, public domain"
+  },
+  "checks": [
+    "76 expected lessons and order",
+    "unique lesson/card identifiers and normalized keywords",
+    "prerequisite references and acyclic graph",
+    "source reference IDs resolved",
+    "3 answered questions per lesson",
+    "3 assessments x 24 questions; each exactly 100 points",
+    "CSV/TSV exact round-trip including HTML and tags",
+    "APKG ZIP CRC and SQLite integrity; note/card/GUID counts",
+    "keyword-only question template",
+    "ruby boundary and nesting regression checks",
+    "worked arithmetic and mock-exam numerical spot checks",
+    "all generated local file/image links resolved"
+  ],
+  "limitations": [
+    "No desktop/mobile Anki GUI import or synchronization was tested by this builder.",
+    "No external subject-expert peer review or exam-score standardization.",
+    "URL listings include reference landing pages, not per-sentence evidence or a guarantee of future availability.",
+    "No PDF is generated. Print the offline HTML or use the Markdown files."
+  ],
+  "anki_backend": {
+    "backend_test": "passed",
+    "desktop_gui_tested": false,
+    "mobile_sync_tested": false,
+    "anki_python_version": "26.9.3",
+    "artifact_sha256": "9b26c25423336bb26bc7972cd77f4ac9e80b1b569efc21137f9de59cd8ea0852",
+    "content_update_tested": true,
+    "keyword_only_front": true,
+    "notes_after_first": 1293,
+    "notes_after_second": 1293,
+    "cards": 1293,
+    "stable_guids": true,
+    "review_schedule_preserved": true,
+    "scope": "First import, unchanged re-import, and newer-note content update using isolated temporary collections; existing review state preserved. No desktop GUI, mobile app or sync test."
+  },
+  "browser": {
+    "status": "passed",
+    "engine": "Chromium",
+    "version": "153.0.8010.12",
+    "pages_and_viewports": [
+      {
+        "file": "index.html",
+        "width": 1280,
+        "sha256": "045f64433e8eeb73602a3f369967d723f0d9e56a75985603ab39a8d7a5df508c"
+      },
+      {
+        "file": "study-guide.html",
+        "width": 1280,
+        "sha256": "523f2680eface3ce4df2dd020377ebba8958c40fdbba33d5391ee20d9cae856c"
+      },
+      {
+        "file": "workbook.html",
+        "width": 1280,
+        "sha256": "ba386a9fd55bad71ae8320b9eea179544045d1781eadac9969f836894c548f61"
+      },
+      {
+        "file": "atlas.html",
+        "width": 1280,
+        "sha256": "3e60f4cce4a146f8f620e6b3be2138fb029430713f51533c6d350efa02c08163"
+      },
+      {
+        "file": "mock-01.html",
+        "width": 1280,
+        "sha256": "9bb51f08ca4c78eab7347324bf3de28ff5b8d479cfb77bfdb7e17ee7afda53b9"
+      },
+      {
+        "file": "mock-02.html",
+        "width": 1280,
+        "sha256": "c4bbc4ca81ec1cebcce95891dec5eb2a159fa88442bb48304165a6db1f88e732"
+      },
+      {
+        "file": "mock-03.html",
+        "width": 1280,
+        "sha256": "89db36d7bb676b22b6c30287a78c95fe12c4cc0d72dfd14f9ce6888eb105ea12"
+      },
+      {
+        "file": "textbook/H04.html",
+        "width": 1280,
+        "sha256": "99a72f062e6ac94434500f6e5665775c2da7b1941133153df59a817a7e0d3f4f"
+      },
+      {
+        "file": "textbook/C11.html",
+        "width": 1280,
+        "sha256": "da5ea2e87825afceb56e355581e3982d4d40ba9fcf8e3b420dd6e4fa062fb69a"
+      },
+      {
+        "file": "index.html",
+        "width": 390,
+        "sha256": "045f64433e8eeb73602a3f369967d723f0d9e56a75985603ab39a8d7a5df508c"
+      },
+      {
+        "file": "study-guide.html",
+        "width": 390,
+        "sha256": "523f2680eface3ce4df2dd020377ebba8958c40fdbba33d5391ee20d9cae856c"
+      },
+      {
+        "file": "workbook.html",
+        "width": 390,
+        "sha256": "ba386a9fd55bad71ae8320b9eea179544045d1781eadac9969f836894c548f61"
+      },
+      {
+        "file": "atlas.html",
+        "width": 390,
+        "sha256": "3e60f4cce4a146f8f620e6b3be2138fb029430713f51533c6d350efa02c08163"
+      },
+      {
+        "file": "mock-01.html",
+        "width": 390,
+        "sha256": "9bb51f08ca4c78eab7347324bf3de28ff5b8d479cfb77bfdb7e17ee7afda53b9"
+      },
+      {
+        "file": "mock-02.html",
+        "width": 390,
+        "sha256": "c4bbc4ca81ec1cebcce95891dec5eb2a159fa88442bb48304165a6db1f88e732"
+      },
+      {
+        "file": "mock-03.html",
+        "width": 390,
+        "sha256": "89db36d7bb676b22b6c30287a78c95fe12c4cc0d72dfd14f9ce6888eb105ea12"
+      },
+      {
+        "file": "textbook/H04.html",
+        "width": 390,
+        "sha256": "99a72f062e6ac94434500f6e5665775c2da7b1941133153df59a817a7e0d3f4f"
+      },
+      {
+        "file": "textbook/C11.html",
+        "width": 390,
+        "sha256": "da5ea2e87825afceb56e355581e3982d4d40ba9fcf8e3b420dd6e4fa062fb69a"
+      }
+    ],
+    "checks": [
+      "76 lesson articles and vocabulary tables",
+      "228 collapsible answers",
+      "search and navigation reset",
+      "answer disclosure and print expansion/restoration",
+      "local images decoded",
+      "no nested ruby",
+      "no page-level horizontal overflow",
+      "no JavaScript page errors"
+    ],
+    "limitations": "Headless Chromium at desktop and phone widths; not physical devices, Safari, or Anki UI."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "backend_test": "passed",
+  "desktop_gui_tested": false,
+  "mobile_sync_tested": false,
+  "anki_python_version": "26.9.3",
+  "artifact_sha256": "9b26c25423336bb26bc7972cd77f4ac9e80b1b569efc21137f9de59cd8ea0852",
+  "content_update_tested": true,
+  "keyword_only_front": true,
+  "notes_after_first": 1293,
+  "notes_after_second": 1293,
+  "cards": 1293,
+  "stable_guids": true,
+  "review_schedule_preserved": true,
+  "scope": "First import, unchanged re-import, and newer-note content update using isolated temporary collections; existing review state preserved. No desktop GUI, mobile app or sync test."
+}
