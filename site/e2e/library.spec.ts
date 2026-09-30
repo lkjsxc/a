@@ -1,5 +1,5 @@
 import { test, expect, type Page } from '@playwright/test';
-import AxeBuilder from '@axe-core/playwright';
+import { AxeBuilder } from '@axe-core/playwright';
 import { readFile } from 'node:fs/promises';
 import { emptyState, STORAGE_KEY } from '../state.ts';
 const first = 'social-studies/textbook/F01.html';
@@ -129,7 +129,7 @@ test('downloads are real files and unknown routes have a useful 404', async ({ p
 test('320–1440px layouts fit the viewport, including tables and large text', async ({ page }, info) => {
   for (const width of [320, 390, 768, 1440]) {
     await page.setViewportSize({ width, height: 900 });
-    for (const path of ['./', first, 'social-studies/atlas.html', 'library.html', 'review.html', 'downloads.html']) {
+    for (const path of ['./', first, 'social-studies/index.html', '000005/index.html', 'social-studies/atlas.html', 'library.html', 'review.html', 'downloads.html']) {
       await page.goto(path); await assertNoOverflow(page);
     }
   }
@@ -137,7 +137,7 @@ test('320–1440px layouts fit the viewport, including tables and large text', a
   await openSettings(page); await page.getByLabel('大きめ', { exact: true }).check(); await page.keyboard.press('Escape');
   await assertNoOverflow(page); await page.screenshot({ path: info.outputPath('reader-mobile.png'), fullPage: true });
 });
-for (const path of ['./', first, '000005/index.html', 'library.html', 'downloads.html', 'review.html']) {
+for (const path of ['./', first, 'social-studies/index.html', '000005/index.html', 'library.html', 'downloads.html', 'review.html']) {
   test(`automated accessibility: ${path}`, async ({ page }) => {
     await page.goto(path);
     const result = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze();

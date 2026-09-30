@@ -63,6 +63,9 @@ document.querySelectorAll<HTMLElement>('[data-filter]').forEach(button => button
 window.addEventListener('storage', event => { if (event.key === STORAGE_KEY) { memory = emptyState(); refresh(); } });
 
 document.querySelectorAll<HTMLElement>('[data-close-dialog]').forEach(button => button.addEventListener('click', () => button.closest('dialog')!.close()));
+document.querySelectorAll<HTMLDialogElement>('dialog').forEach(dialog => dialog.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && !event.isComposing) { event.preventDefault(); event.stopPropagation(); dialog.close(); }
+}));
 document.querySelectorAll<HTMLDialogElement>('dialog').forEach(dialog => dialog.addEventListener('click', event => {
   if (event.target !== dialog) return;
   const r = dialog.getBoundingClientRect();

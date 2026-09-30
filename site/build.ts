@@ -53,7 +53,7 @@ for (const config of [
   { id: 'art', name: '色彩理論・絵画', file: '000003.csv', delimiter: ',' },
 ]) {
   const data = await readFile(path.join(root, config.file), 'utf8');
-  const rows = parse(data, { delimiter: config.delimiter, bom: true, skip_empty_lines: true, comment: '#', relax_column_count: true }) as string[][];
+  const rows = parse(data, { delimiter: config.delimiter, quote: config.delimiter === '\t' ? false : '"', bom: true, skip_empty_lines: true, comment: '#', relax_column_count: true }) as string[][];
   const cards = rows.filter(row => row.length >= 2 && row[0] && row[1]).map(row => ({ front: clean(row[0]), back: clean(row[1]), tags: row[2] || '' }));
   if (!cards.length) throw new Error(`No cards: ${config.file}`);
   decks.push({ id: config.id, name: config.name, cards });
@@ -62,9 +62,12 @@ const oldCards = JSON.parse(await readFile(path.join(root, '000004.json'), 'utf8
 decks.push({ id: 'basics', name: '基礎・地理・歴史', cards: oldCards.map(c => ({ front: clean(c.front), back: clean(c.back_html), tags: c.tags })) });
 for (const d of decks) await put(`data/${d.id}.json`, JSON.stringify(d.cards));
 const pages: Page[] = [];
-for (const source of markdown) pages.push(render(source, await readFile(path.join(root, source), 'utf8'), sources, new Set(copied), images, base));
-const rank = (p: Page) => p.section === '社会' ? ({ F: 0, G: 1, H: 2, C: 3 }[path.basename(p.path)[0]] ?? 4) : 5;
-pages.sort((a, b) => rank(a) - rank(b) || a.source.localeCompare(b.source, 'en'));
+const publishedTargets = new Set([...copied, ...markdown.map(route)]);
+for (const source of markdown) pages.push(render(source, await readFile(path.join(root, source), 'utf8'), sources, publishedTargets, images, base));
+const scienceOrder = ['00_start_here', '01_skills', '02_grade_maps', 'inquiry', 'physics', 'chemistry', 'biology', 'earth_science'];
+const rank = (p: Page) => p.section === '社会' ? ({ F: 0, G: 1, H: 2, C: 3 }[path.basename(p.path)[0]] ?? 4) : 5 + (scienceOrder.indexOf(p.source.split('/')[2]) + 1) / 10;
+const startRank = (p: Page) => p.source.endsWith('/learning_plan.md') ? 0 : p.source.endsWith('/how_to_read_cards.md') ? 1 : 2;
+pages.sort((a, b) => rank(a) - rank(b) || startRank(a) - startRank(b) || a.source.localeCompare(b.source, 'en'));
 const js = await build({ entryPoints: [path.join(root, 'site/app.ts')], bundle: true, write: false, minify: true, target: ['es2022'], format: 'esm', legalComments: 'none' });
 const script = js.outputFiles![0].contents, css = await readFile(path.join(root, 'site/style.css'));
 const hash = (value: Uint8Array) => createHash('sha256').update(value).digest('hex').slice(0, 12);

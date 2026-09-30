@@ -6,7 +6,7 @@
 
 **[学び方・12の解き方・比較表](study-guide.md)** → 入口F01〜F04 → 地理・歴史 → 公民。
 
-[全教材のZIP](downloads/social-studies-complete.zip)を展開すると、`index.html`をブラウザーで開いてオフラインで読めます。GitHub上ではHTMLをそのままウェブサイトとして表示しないため、下のMarkdownの単元を開くか、ZIPを保存・展開してください。GitHub Pagesの公開設定は変更していません。
+[全教材のZIP](downloads/social-studies-complete.zip)を展開すると、`index.html`をブラウザーで開いてオフラインで読めます。オンラインでは[まなびの図書室・社会の学習室](https://lkjsxc.github.io/a/social-studies/)で読むこともできます。新しいWebサイトでは検索・読了記録・カード練習を利用できます。ZIP内は独立したオフライン配布版で、Webサイトの機能や学習記録とは別です。
 
 ## 内容
 

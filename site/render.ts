@@ -34,6 +34,9 @@ export function render(source: string, markdown: string, sources: Set<string>, f
   const slugger = new Slugger();
   const headings: Page['headings'] = [];
   let haveH2 = false;
+  for (const el of Array.from(document.querySelectorAll('h1'))) {
+    const replacement = document.createElement('h2'); replacement.innerHTML = el.innerHTML; el.replaceWith(replacement);
+  }
   for (const el of Array.from(document.querySelectorAll('h2,h3,h4,h5,h6'))) {
     // Some original lessons begin with h3; keep the initial reading sections at h2.
     if (el.localName === 'h2') haveH2 = true;
