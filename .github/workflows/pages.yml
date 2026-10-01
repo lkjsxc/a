@@ -1,4 +1,4 @@
-name: Verify and publish learning library
+name: Verify and publish study documents
 on:
   push:
     branches: [main]

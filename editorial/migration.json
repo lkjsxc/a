@@ -1,0 +1,12 @@
+{
+  "revision": "2026-10-01",
+  "policyTerms": 464,
+  "scienceCards": 857,
+  "coreCards": 150,
+  "beforeReadingRuby": {
+    "science": 1553,
+    "social": 4491
+  },
+  "afterScienceReadingRuby": 736,
+  "repairedKeywordRecords": 165
+}

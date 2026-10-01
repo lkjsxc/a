@@ -3,7 +3,7 @@
   "desktop_gui_tested": false,
   "mobile_sync_tested": false,
   "anki_python_version": "26.9.3",
-  "artifact_sha256": "9b26c25423336bb26bc7972cd77f4ac9e80b1b569efc21137f9de59cd8ea0852",
+  "artifact_sha256": "0c6f2090ef12b9cd19dfdc856802e471b860cc1bbacb7609901462c22d10ac87",
   "content_update_tested": true,
   "keyword_only_front": true,
   "notes_after_first": 1293,

@@ -1,53 +1,56 @@
-# a. まなびの図書室
+# サイトの保守手順
 
-Public website: **https://lkjsxc.github.io/a/**
+## 公開構成
 
-## Architecture
+公開先は https://lkjsxc.github.io/a/ です。`site/build.ts`が原稿からHTMLを生成し、`site/style.css`を配信します。ブラウザー用のJavaScriptバンドルは生成しません。`catalog.json`と`build.json`は検証用のメタデータで、閲覧時には取得しません。
 
-The website is a progressively enhanced static site, not a hosted Node server. Existing Markdown is the reading source; original Anki packages and other downloads are copied byte-for-byte. The separate website build does not regenerate the existing Python-generated social-studies packages or change Anki note identities.
+サイト名は「学習サイト」です。説明は具体的で通常の文体にし、宣伝的な見出し・比喩的な機能名・子ども向けの呼びかけを追加しません。機能を増やすより、原稿と目次の整理を優先します。
 
-- Node 24 and TypeScript build the site into `_site/`.
-- Markdown is sanitized before publication. Japanese ruby, disclosure answers, figures, and tables remain available.
-- Relative Markdown links are rewritten to the GitHub Pages `/a/` project subpath. Unicode filenames, anchor links, and source links are preserved.
-- PNG/JPEG pictures get optimized WebP copies for reading; originals are retained.
-- Browser code is bundled once, minified, content-hashed, and loaded without a framework. No external fonts, advertising, analytics, or account backend.
-- Search and deck JSON are fetched on demand. Reading and ordinary links work without JavaScript.
-- Learning records are local to this project (`lkjsxc:a:learning:v1`), exportable/importable, and never sent to a server. Browser practice is self-assessment, not spaced-repetition scheduling.
-
-## Develop and verify
+## ローカル確認
 
 ```sh
 npm ci
 npm run verify
-npx playwright install --with-deps chromium webkit
-npm run test:browser
+npx playwright install chromium webkit
+PORT=4197 npm run test:browser
 npm run preview
 ```
 
-Preview: `http://127.0.0.1:4173/a/`. Node is only needed for authoring, verification and builds.
+`verify`は型検査、単体テスト、全ページ生成、リンク・アンカー・ルビ・配布ファイルの検査を行います。ブラウザーテストはChromiumとWebKitで実施し、JavaScript無効、キーボード操作、幅320〜1440px、印刷用CSS、アクセシビリティを確認します。
 
-`npm run verify` checks types, unit tests, then builds and checks every generated internal link, fragment, image path, download identity, data count, HTML structure and basic size budgets. Browser tests exercise native navigation, blocked storage, search failures, responsive reading, import/export, practice, and automated WCAG checks on Chromium and mobile WebKit. Automated tests are not a guarantee of accessibility for every user or performance on physical devices.
+`PORT`はプレビューのポートを変更します。テスト時は既存サーバーを使い回さず、対象の作業ツリーから起動します。
 
-To validate an already published deployment, build locally first, then run browser tests using `BASE_URL=https://lkjsxc.github.io/a/ npm run test:browser`. This may write test-only learning records in Playwright's isolated browser profiles, not a person's real browser.
+```sh
+SITE_URL=https://example.com/ npm run build
+node site/check.ts
+npm run build
+BASE_URL=https://lkjsxc.github.io/a/ npm run test:browser
+```
 
-## Edit content
+最後のコマンドは公開済みサイトの検証です。公開反映を確認してから実行します。
 
-Edit the existing Markdown for readings. Social-studies generated materials still have their existing `social-studies/source/` and `tools/` source-of-truth; follow that package's own instructions when changing its curriculum or Anki content. Preserve its stable card identifiers. The website automatically rebuilds from the committed outputs.
+## 原稿・配布データ
 
-Website layout and behavior live in `site/`. CSS is in `style.css`, page templates in `templates.ts`, sanitization/link handling in `render.ts`, storage contract in `state.ts`. Do not edit `_site/` manually or commit it.
+社会は`social-studies/source/`を編集し、同ディレクトリのREADMEに従って生成します。既存のPython生成器はAnkiパッケージとオフライン教材の生成に使用します。社会の単元ID・カードID・GUIDを変更しないでください。
 
-## Publication
+ルビの正本は`editorial/ruby.json`です。社会のZIPには再生成用のコピー`ruby-policy.json`を含めます。ルビ辞書の変更後は次を実行してください。
 
-Repository Settings → Pages uses **GitHub Actions**. `.github/workflows/pages.yml` runs verification for pull requests and for every push to `main`. Only a verified main-branch artifact can reach the `github-pages` environment; pull requests have no Pages-write or ID-token permission. Actions are pinned to commit hashes and npm uses a checked-in lockfile.
+```sh
+node site/normalize-content.ts
+python social-studies/tools/build.py --verify-anki --verify-render
+node site/normalize-content.ts --checksums
+npm run verify
+npm run test:browser
+```
 
-The only uploaded directory is `_site/`, built from an explicit content-extension allowlist. Repository internals, `.git`, dependencies, content-generation tools, and hidden files are never uploaded. No personal access token, deployment secret, or external hosting account is needed by the workflow.
+上記のPythonコマンドは必要パッケージを入れた仮想環境内で実行します。AnkiバックエンドとPython版Playwrightが必要です。オプションを省いた生成では、未実施の検査を成功と記録しません。
 
-`SITE_URL` can change the build's absolute canonical URL and project prefix (default `https://lkjsxc.github.io/a/`), but a new domain also requires the matching GitHub Pages/domain configuration. Preview supports the same variable. Browser acceptance tests intentionally test the actual `/a/` deployment.
+理科の元データは`000005/data/science_cards_master.json`とCSVです。正規化処理はカード数・本文の基底文字列を検査し、関連するCSV・TSV・Markdownを更新します。旧`science_cards.xlsx`は2026年7月版の保存用ファイルとして保持し、公開配布から除外しています。現在の編集用配布形式は全項目CSVです。
 
-To roll back, revert the unwanted source commit on `main`, then let the same checks and deploy workflow run. Avoid force-pushing history. A deployment is complete only when the workflow's deploy job succeeds and the live `build.json` revision matches the intended main commit.
+## 公開時の不変条件
 
-## Offline and privacy boundaries
+HTMLページは本文を直接含み、JavaScript・フォーム・独自設定UIを持ちません。ソースディレクトリ、実行コード、秘密情報、旧Excelファイルは配布対象にしません。既存の教材URL、全76社会単元、全171理科読み物ページ、全5,204枚のカードを保ちます。
 
-The entire website is not an offline application and has no service worker. Use the existing social-studies ZIP or Anki data offline. The ZIP's original interface does not include this website's search and local reading records. Learning records do not synchronize automatically; settings can export/import them. GitHub Pages still processes normal hosting requests according to GitHub's privacy policy.
+確認問題の解答表示はネイティブHTML、印刷はCSSだけで実現します。CSSの対応差がありうるため、対応ブラウザーを変更したときは閉じた解答の印刷表示も再検査してください。
 
-Do not claim that a website/UI change re-validated every educational assertion in the source corpus. The original citations, source quality notes, and accuracy limitations remain part of the materials.
+`_site/`・ブラウザーのトレース・スクリーンショット・個人の学習記録はコミットしません。検証結果を報告するときは、検証対象のコミットと実施範囲を明記してください。

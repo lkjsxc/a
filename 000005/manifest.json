@@ -1,5 +1,5 @@
 {
-  "title": "小・中学校理科 体系フラッシュカード",
+  "title": "小・中学校理科の教材",
   "version": "2026.07.2",
   "generated_on": "2026-07-10",
   "language": "ja-JP",
@@ -56,5 +56,7 @@
     "anki/science_core_first_150.tsv",
     "anki/science_front_back.tsv",
     "anki/science_tagged.tsv"
-  ]
+  ],
+  "editorial_revision": "2026-10-01",
+  "ruby_policy": "../editorial/README.md"
 }
