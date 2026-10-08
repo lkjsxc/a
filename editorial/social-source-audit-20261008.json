@@ -1,0 +1,710 @@
+{
+  "status": "passed",
+  "scope": "authored_source_only",
+  "baseline_commit": "0e70b2196f1ecbc2bdbbcf0b41d0a5943a5bc10b",
+  "measurement": "Main @text only, whitespace removed; headings and inline source URLs retained. No vocabulary table, question, answer, HTML/ruby or duplicate format is counted.",
+  "before_body_characters": 63416,
+  "after_body_characters": 147483,
+  "body_ratio": 2.325643370758168,
+  "lesson_count": 76,
+  "original_note_identities_preserved": true,
+  "duplicate_normalized_fronts": [],
+  "before_questions": 228,
+  "after_questions": 456,
+  "lesson_notes": 2058,
+  "atlas_notes_from_unchanged_baseline": 47,
+  "intended_anki_notes": 2105,
+  "arithmetic_spot_checks": [
+    "F02-Q01",
+    "F02-Q02",
+    "F02-Q04",
+    "F02-Q05",
+    "F03-Q01",
+    "F03-Q04",
+    "F04-Q04",
+    "G02-Q04",
+    "G03-Q04",
+    "G07-Q04",
+    "G10-Q04",
+    "G11-Q05",
+    "G17-Q04",
+    "G18-Q04",
+    "G19-Q04",
+    "G24-Q04",
+    "G27-Q05",
+    "H12-Q04",
+    "H15-Q04",
+    "H20-Q04",
+    "H27-Q05",
+    "C02-Q04",
+    "C03-Q04",
+    "C03-Q05",
+    "C05-Q04",
+    "C05-Q05",
+    "C09-Q06",
+    "C10-Q04",
+    "C11-Q05",
+    "C12-Q04",
+    "C13-Q04",
+    "C13-Q05",
+    "C14-Q04",
+    "C14-Q05",
+    "C15-Q04",
+    "C16-Q04",
+    "C16-Q05",
+    "C18-Q04"
+  ],
+  "foundation_rewritten": true,
+  "reference_ids_and_prerequisite_graph_valid": true,
+  "artifact_build_tested": false,
+  "anki_upgrade_tested": false,
+  "browser_tested": false,
+  "main_updated": false,
+  "deployment_tested": false,
+  "source_sha256": {
+    "editorial/social-baseline-20261008.json": "bf5d3f2e074139c6a0ab270bef777aeeff577c18d1b59e025c8edc4d94639c8a",
+    "social-studies/source/00-foundation.txt": "34375479a54e08e07313a1fb8aa7a7757a67792a76d9ac4597964a34d273f656",
+    "social-studies/source/10-geography-world-a.txt": "102c454dcf971a778aed364e8242919e97ad02a953d20990df81d900f9806a11",
+    "social-studies/source/11-geography-world-b.txt": "99204bcac4d8cab2c11797a61e3831b2b289e1c08eae6ded5b3354401b02ddef",
+    "social-studies/source/12-geography-japan-a.txt": "7af5f60ec80dacb2c27047af9678de2fb4f884eadc14ac6522579ac32c69b3fe",
+    "social-studies/source/13-geography-japan-b.txt": "c9fe20df9cf7e868db710914d5e52eb0707bcfe86d9d7ddc379f3b10414455b1",
+    "social-studies/source/20-history-ancient.txt": "f27c7782ee2f3a232c7e2016e3b5c713997581a7b4d9933d21d7040110e78851",
+    "social-studies/source/21-history-medieval.txt": "3c8d68ea00ee0f9e3209365ab5cae0068573e26da570abcc582f83b1f09105c5",
+    "social-studies/source/22-history-edo.txt": "e421f793b2b21bc00a9c2b62143e965ce44460b46a62fd41c08505ba37f8d5bb",
+    "social-studies/source/23-history-modern.txt": "de7348f1d366d814fb57e2e93a461a2fc79304b488579342f2835d2173e152ba",
+    "social-studies/source/24-history-contemporary.txt": "171de58ddd8235b208f74bad9925eba3212bea32821ac180e7fdd548d4f3f349",
+    "social-studies/source/30-civics-foundations-politics.txt": "bcb389cbdfca177fa14f483a896c8c0009b36d448999e6c02543a9b3aaf39bca",
+    "social-studies/source/31-civics-government-economy.txt": "ae03cd1744ad4697c53e17e99c3989a62c083ec658c84975c2ee68aededa0101",
+    "social-studies/source/32-civics-finance-international.txt": "cfdae5ccef71b581a72f70e759c0b92b973fb3f7b6fa87447dd16fde7665ad00",
+    "social-studies/source/expansion/10-world-foundations.txt": "6ce20c2ed09f268f5570333f169ac750b1b69e1138166c794554b6a8527b1e97",
+    "social-studies/source/expansion/11-asia-europe.txt": "b6e63cc56fcf984870a164696e2e98fd23af181338210d8011f91ea9196da886",
+    "social-studies/source/expansion/12-africa-americas-oceania.txt": "6587007c6bf0de729c0b6222bcfdede54f0a04a6bca20061f4284f3755770caa",
+    "social-studies/source/expansion/13-japan-natural-environment.txt": "03de632a7452b63988ec23f8f60a8cdb93710330916259ad4e37fc53c8196a95",
+    "social-studies/source/expansion/14-japan-industry.txt": "8b51a310d2aa5e40eabff501738402db5e22b87b9341c519975f66c1d6c53364",
+    "social-studies/source/expansion/15-japan-west-regions.txt": "879787a3b7c064b01ea140a9b3c73aa6ef4f685d52eb7542db2669b4fe386225",
+    "social-studies/source/expansion/16-japan-east-inquiry.txt": "562d77d5400301e7a44d4fa24bc3fce478fe18664dd71607cf9c478b5d8080c4",
+    "social-studies/source/expansion/20-ancient-societies.txt": "2913af5b75bc35b8aab434e90787efe0a3b686a356b631c099855bd6f16013ca",
+    "social-studies/source/expansion/21-ancient-medieval-transition.txt": "7462810f5ae0f54a823f7cac644f894e1ef06286e6af29c1cd85a6e0e3ac0c28",
+    "social-studies/source/expansion/22-medieval-exchange-unification.txt": "85859d2cb8731b045be2317a9fe665d41891b59e7e58efc6c3b891a9f55d0eac",
+    "social-studies/source/expansion/23-edo-government-economy.txt": "e2bc32681346972c9d965d39b8c2023edc16905d3afda4bde4e9cfdbdbb892cf",
+    "social-studies/source/expansion/24-edo-to-meiji.txt": "e32d03beb6d5370d0f241b9640f308cab857d712c0aa9aa1a44e9e5ecf7a80c6",
+    "social-studies/source/expansion/25-modern-politics-and-war.txt": "a63697569e8fff8f1aa2b600b354c82f9245e2291256997beecc5e61f4ce6229",
+    "social-studies/source/expansion/26-postwar-and-globalization.txt": "861ce1abc2121f37f1d5c09b97b726940705bdb8965ca62b56012552d42a66ef",
+    "social-studies/source/expansion/30-civics-information-constitution.txt": "1f02525da0fc28961d13ecf752c5fcbbc2b251266a5f4105f9358558e671b1ed",
+    "social-studies/source/expansion/31-civics-rights-election-diet.txt": "0c9ad12e5305b0fe881dae4b885068be52b7de9dd69dfe7c289a1ab5111244f0",
+    "social-studies/source/expansion/32-civics-administration-courts-local.txt": "30a41bdbfda138a56d6ceb4150a31af4479d6267f6e4b0467149a5ea5bc4b448",
+    "social-studies/source/expansion/33-civics-consumer-market-labor.txt": "e78a156a9b24cd32b94a10f999c01a97c2a4ca8bdc28e91332b4e7763a4b1f83",
+    "social-studies/source/expansion/34-civics-finance-tax-welfare.txt": "77f657f4ebf514859de3d4fb4b9c6eaa9c7f6a91d27be2c51de7fb243bdfd7a9",
+    "social-studies/source/expansion/35-civics-international-sustainability.txt": "664d6754fe2938d74b6699c7362411963c8e2a12f7273c6d6f953f2a19517bf8"
+  },
+  "lessons": [
+    {
+      "id": "F01",
+      "title": "社会科の分野と社会の構成",
+      "before_body_characters": 623,
+      "after_body_characters": 1344,
+      "cards": 12,
+      "questions": 6
+    },
+    {
+      "id": "F02",
+      "title": "数値・割合と統計資料",
+      "before_body_characters": 675,
+      "after_body_characters": 1429,
+      "cards": 12,
+      "questions": 6
+    },
+    {
+      "id": "F03",
+      "title": "地図の表現と地形の読み取り",
+      "before_body_characters": 840,
+      "after_body_characters": 1538,
+      "cards": 13,
+      "questions": 6
+    },
+    {
+      "id": "F04",
+      "title": "年代の表し方と史料の検討",
+      "before_body_characters": 691,
+      "after_body_characters": 1460,
+      "cards": 12,
+      "questions": 6
+    },
+    {
+      "id": "G01",
+      "title": "地球上の住所と大陸・大洋",
+      "before_body_characters": 625,
+      "after_body_characters": 1476,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G02",
+      "title": "世界地図と時差を使う",
+      "before_body_characters": 683,
+      "after_body_characters": 1570,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G03",
+      "title": "気候と暮らしを結び付ける",
+      "before_body_characters": 685,
+      "after_body_characters": 1569,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "G04",
+      "title": "多様な文化と世界の結び付き",
+      "before_body_characters": 659,
+      "after_body_characters": 1627,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G05",
+      "title": "東アジアの人口・農業・工業",
+      "before_body_characters": 628,
+      "after_body_characters": 1583,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G06",
+      "title": "東南アジア・南アジアの変化",
+      "before_body_characters": 644,
+      "after_body_characters": 1577,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G07",
+      "title": "西アジア・中央アジアの資源と水",
+      "before_body_characters": 713,
+      "after_body_characters": 1714,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G08",
+      "title": "ヨーロッパの農業・工業・地域統合",
+      "before_body_characters": 681,
+      "after_body_characters": 1660,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G09",
+      "title": "アフリカの自然・歴史・発展",
+      "before_body_characters": 680,
+      "after_body_characters": 1633,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G10",
+      "title": "北アメリカの大規模農業と先端産業",
+      "before_body_characters": 655,
+      "after_body_characters": 1642,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G11",
+      "title": "南アメリカの開発と環境",
+      "before_body_characters": 688,
+      "after_body_characters": 1677,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G12",
+      "title": "オセアニアの自然・貿易・多文化社会",
+      "before_body_characters": 647,
+      "after_body_characters": 1648,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G13",
+      "title": "日本の位置・領域・都道府県",
+      "before_body_characters": 796,
+      "after_body_characters": 1829,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G14",
+      "title": "山・川・平野がつくる土地利用",
+      "before_body_characters": 666,
+      "after_body_characters": 1618,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G15",
+      "title": "日本の気候を六つの特徴で読む",
+      "before_body_characters": 673,
+      "after_body_characters": 1816,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G16",
+      "title": "人口・都市・自然災害を考える",
+      "before_body_characters": 748,
+      "after_body_characters": 1844,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G17",
+      "title": "食料・農林水産業を支える仕組み",
+      "before_body_characters": 746,
+      "after_body_characters": 1816,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G18",
+      "title": "工業の立地とエネルギーの選び方",
+      "before_body_characters": 690,
+      "after_body_characters": 1768,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G19",
+      "title": "交通・貿易・サービス業でつながる日本",
+      "before_body_characters": 708,
+      "after_body_characters": 1843,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G20",
+      "title": "九州・沖縄――火山・温暖な気候・交流",
+      "before_body_characters": 698,
+      "after_body_characters": 1732,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G21",
+      "title": "中国・四国――山地をはさんだ違い",
+      "before_body_characters": 679,
+      "after_body_characters": 1764,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G22",
+      "title": "近畿――歴史的景観と大都市の生活",
+      "before_body_characters": 672,
+      "after_body_characters": 1696,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G23",
+      "title": "中部――東海・中央高地・北陸を比べる",
+      "before_body_characters": 666,
+      "after_body_characters": 1586,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G24",
+      "title": "関東――首都の機能と周辺地域",
+      "before_body_characters": 712,
+      "after_body_characters": 1682,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G25",
+      "title": "東北――稲作・冷たい風・海の恵み",
+      "before_body_characters": 708,
+      "after_body_characters": 1746,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G26",
+      "title": "北海道――広い土地と冷涼な気候",
+      "before_body_characters": 708,
+      "after_body_characters": 1813,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "G27",
+      "title": "身近な地域を調べ、根拠をもって提案する",
+      "before_body_characters": 753,
+      "after_body_characters": 1894,
+      "cards": 22,
+      "questions": 6
+    },
+    {
+      "id": "H01",
+      "title": "人類の生活と文明の誕生",
+      "before_body_characters": 727,
+      "after_body_characters": 1760,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "H02",
+      "title": "古代の中国・地中海世界と宗教",
+      "before_body_characters": 697,
+      "after_body_characters": 1735,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "H03",
+      "title": "縄文・弥生・古墳――列島の社会の変化",
+      "before_body_characters": 678,
+      "after_body_characters": 1640,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "H04",
+      "title": "飛鳥――天皇を中心とする国家へ",
+      "before_body_characters": 738,
+      "after_body_characters": 1759,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "H05",
+      "title": "奈良――税・土地・仏教が支える国家",
+      "before_body_characters": 751,
+      "after_body_characters": 1731,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "H06",
+      "title": "平安――貴族の政治と日本風の文化",
+      "before_body_characters": 719,
+      "after_body_characters": 1726,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "H07",
+      "title": "武士の登場と鎌倉幕府の仕組み",
+      "before_body_characters": 742,
+      "after_body_characters": 1863,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "H08",
+      "title": "元寇・新しい仏教・鎌倉幕府の終わり",
+      "before_body_characters": 733,
+      "after_body_characters": 1848,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "H09",
+      "title": "室町幕府と東アジアの交流",
+      "before_body_characters": 756,
+      "after_body_characters": 1877,
+      "cards": 32,
+      "questions": 6
+    },
+    {
+      "id": "H10",
+      "title": "中世の村・商業・文化",
+      "before_body_characters": 885,
+      "after_body_characters": 1934,
+      "cards": 33,
+      "questions": 6
+    },
+    {
+      "id": "H11",
+      "title": "ヨーロッパの変化と世界を結ぶ航海",
+      "before_body_characters": 767,
+      "after_body_characters": 1858,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "H12",
+      "title": "織田・豊臣の統一と社会の再編",
+      "before_body_characters": 773,
+      "after_body_characters": 1823,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "H13",
+      "title": "江戸幕府――長く続く支配の仕組み",
+      "before_body_characters": 820,
+      "after_body_characters": 1965,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "H14",
+      "title": "江戸の対外関係――閉じた中にも窓がある",
+      "before_body_characters": 805,
+      "after_body_characters": 1960,
+      "cards": 28,
+      "questions": 6
+    },
+    {
+      "id": "H15",
+      "title": "江戸の経済――米・商品・都市のつながり",
+      "before_body_characters": 798,
+      "after_body_characters": 1896,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "H16",
+      "title": "江戸の改革――米中心の政治と変わる経済",
+      "before_body_characters": 791,
+      "after_body_characters": 1916,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "H17",
+      "title": "江戸の学問・文化――学ぶ人と読者が広がる",
+      "before_body_characters": 792,
+      "after_body_characters": 1942,
+      "cards": 32,
+      "questions": 6
+    },
+    {
+      "id": "H18",
+      "title": "市民革命・産業革命――近代の世界が変わる",
+      "before_body_characters": 904,
+      "after_body_characters": 2045,
+      "cards": 34,
+      "questions": 6
+    },
+    {
+      "id": "H19",
+      "title": "開国と幕末――幕府から新しい政府へ",
+      "before_body_characters": 842,
+      "after_body_characters": 1927,
+      "cards": 32,
+      "questions": 6
+    },
+    {
+      "id": "H20",
+      "title": "明治の改革――国・学校・軍隊・税をつくり直す",
+      "before_body_characters": 990,
+      "after_body_characters": 2302,
+      "cards": 34,
+      "questions": 6
+    },
+    {
+      "id": "H21",
+      "title": "自由民権運動と大日本帝国憲法",
+      "before_body_characters": 869,
+      "after_body_characters": 2064,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "H22",
+      "title": "条約改正・対外戦争・産業化",
+      "before_body_characters": 982,
+      "after_body_characters": 2058,
+      "cards": 34,
+      "questions": 6
+    },
+    {
+      "id": "H23",
+      "title": "第一次世界大戦と大正デモクラシー",
+      "before_body_characters": 1062,
+      "after_body_characters": 2180,
+      "cards": 36,
+      "questions": 6
+    },
+    {
+      "id": "H24",
+      "title": "世界恐慌から第二次世界大戦へ",
+      "before_body_characters": 1034,
+      "after_body_characters": 2284,
+      "cards": 36,
+      "questions": 6
+    },
+    {
+      "id": "H25",
+      "title": "占領と民主化――戦後の制度をつくる",
+      "before_body_characters": 938,
+      "after_body_characters": 2171,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "H26",
+      "title": "冷戦と高度経済成長――豊かさの光と課題",
+      "before_body_characters": 1008,
+      "after_body_characters": 2331,
+      "cards": 34,
+      "questions": 6
+    },
+    {
+      "id": "H27",
+      "title": "冷戦後の世界と、歴史を今へつなぐ方法",
+      "before_body_characters": 1050,
+      "after_body_characters": 2397,
+      "cards": 28,
+      "questions": 6
+    },
+    {
+      "id": "C01",
+      "title": "現代社会――情報・文化・人口の変化",
+      "before_body_characters": 878,
+      "after_body_characters": 2138,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "C02",
+      "title": "対立から合意へ――効率と公正で考える",
+      "before_body_characters": 866,
+      "after_body_characters": 2002,
+      "cards": 24,
+      "questions": 6
+    },
+    {
+      "id": "C03",
+      "title": "憲法――政治の力を制限して人権を守る",
+      "before_body_characters": 868,
+      "after_body_characters": 2089,
+      "cards": 28,
+      "questions": 6
+    },
+    {
+      "id": "C04",
+      "title": "人権――自由・平等・生活・参加を守る",
+      "before_body_characters": 883,
+      "after_body_characters": 2148,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "C05",
+      "title": "民主政治・選挙・政党と世論",
+      "before_body_characters": 942,
+      "after_body_characters": 2159,
+      "cards": 28,
+      "questions": 6
+    },
+    {
+      "id": "C06",
+      "title": "国会――法律・予算・政府をチェックする",
+      "before_body_characters": 905,
+      "after_body_characters": 2149,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "C07",
+      "title": "内閣と行政――決まった方針を実行する",
+      "before_body_characters": 942,
+      "after_body_characters": 2270,
+      "cards": 28,
+      "questions": 6
+    },
+    {
+      "id": "C08",
+      "title": "裁判所と三権分立――権力を互いに点検する",
+      "before_body_characters": 1031,
+      "after_body_characters": 2394,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "C09",
+      "title": "地方自治――身近な政治を自分たちで行う",
+      "before_body_characters": 1326,
+      "after_body_characters": 2689,
+      "cards": 31,
+      "questions": 6
+    },
+    {
+      "id": "C10",
+      "title": "家計と消費生活――契約を理解して選ぶ",
+      "before_body_characters": 1051,
+      "after_body_characters": 2437,
+      "cards": 28,
+      "questions": 6
+    },
+    {
+      "id": "C11",
+      "title": "市場経済――価格は何を伝えるか",
+      "before_body_characters": 1558,
+      "after_body_characters": 2889,
+      "cards": 32,
+      "questions": 6
+    },
+    {
+      "id": "C12",
+      "title": "企業と労働――生産を支える人と資金",
+      "before_body_characters": 1022,
+      "after_body_characters": 2324,
+      "cards": 30,
+      "questions": 6
+    },
+    {
+      "id": "C13",
+      "title": "金融――お金が、余るところから必要なところへ動く",
+      "before_body_characters": 1317,
+      "after_body_characters": 2673,
+      "cards": 29,
+      "questions": 6
+    },
+    {
+      "id": "C14",
+      "title": "財政と税――公共の仕事の費用を分かち合う",
+      "before_body_characters": 1060,
+      "after_body_characters": 2400,
+      "cards": 28,
+      "questions": 6
+    },
+    {
+      "id": "C15",
+      "title": "社会保障――人生のリスクを社会で支える",
+      "before_body_characters": 1052,
+      "after_body_characters": 2377,
+      "cards": 28,
+      "questions": 6
+    },
+    {
+      "id": "C16",
+      "title": "国際経済――貿易と為替のつながり",
+      "before_body_characters": 1019,
+      "after_body_characters": 2327,
+      "cards": 26,
+      "questions": 6
+    },
+    {
+      "id": "C17",
+      "title": "国際政治――主権国家が協力する仕組み",
+      "before_body_characters": 1486,
+      "after_body_characters": 2914,
+      "cards": 32,
+      "questions": 6
+    },
+    {
+      "id": "C18",
+      "title": "持続可能な社会――根拠を使って未来を選ぶ",
+      "before_body_characters": 1119,
+      "after_body_characters": 2518,
+      "cards": 28,
+      "questions": 6
+    }
+  ]
+}
