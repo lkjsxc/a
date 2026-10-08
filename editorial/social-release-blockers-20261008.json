@@ -1,4 +1,6 @@
 {
+  "historical_record": true,
+  "superseded_by": "social-release-verification-20261008.json",
   "status": "blocked",
   "sourceCommit": "745b79807adde29b379e561c664f497189047388",
   "scope": "Release-readiness diagnostic. This report neither generates artifacts nor indicates a deployment.",

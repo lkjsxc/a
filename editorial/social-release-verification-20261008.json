@@ -1,0 +1,589 @@
+{
+  "scope": "local and clean-checkout verification; deployment is verified separately after publishing",
+  "implementation_commit": "fe790823d910b37da149cb6b98fdcbc10b487e6f",
+  "input_tree_sha256": "ba7bf6fe0515de2e7fe297ced915efb3f69010180a1df46e3e065822a3570a96",
+  "artifacts_sha256": {
+    "anki/social-studies.apkg": "e736d275647304db8c355e7bcaa8b4fb2ef924cdac258307064987fc350320e6",
+    "anki/cards.csv": "69c8125e739058851e499d4a6712548d4fa7e5cb7b19e3d75ac6084e41bcfce8",
+    "anki/cards.tsv": "ba94e6ab802bdbad3b2867acdef9432c54a37bde963ddd412bb07a69725e724d",
+    "downloads/social-studies-complete.zip": "a29d7a5f3c019fd9a77b912837d3588f59dedd65276995bd77a7327d1f362796",
+    "manifest.sha256": "ad1bf2da391b792e66541a05d7a394c15b453efa9ae4df86e9f381d8e369ada1"
+  },
+  "archive": {
+    "status": "passed",
+    "archive_sha256": "a29d7a5f3c019fd9a77b912837d3588f59dedd65276995bd77a7327d1f362796",
+    "files": 250,
+    "manifest_files": 249,
+    "zip_crc": true,
+    "manifest_exact_contents": true,
+    "sha256sum_check": true,
+    "regenerated_text_artifacts_identical": 192,
+    "without_git_rebuild": {
+      "status": "passed",
+      "anki_backend": "passed",
+      "anki_upgrade": "not_run_baseline_unavailable",
+      "browser": "passed"
+    }
+  },
+  "source_audit": "editorial/social-source-audit-20261008.json",
+  "clean_checkout": {
+    "status": "passed",
+    "commit": "fe790823d910b37da149cb6b98fdcbc10b487e6f",
+    "text_artifacts_identical": 192,
+    "anki_semantic_notes_identical": 2105,
+    "node_unit_tests": 20,
+    "browser_tests": 42
+  },
+  "external_references": [
+    {
+      "url": "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "status": 200,
+      "final_url": "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "title": "主な資料(中世資料) - 神奈川県立公文書館"
+    },
+    {
+      "url": "https://asean.org/about-asean/",
+      "error": "HTTP Error 307: Temporary Redirect"
+    },
+    {
+      "url": "https://collection.shozokan.nich.go.jp/object/SZK002942",
+      "status": 200,
+      "final_url": "https://collection.shozokan.nich.go.jp/object/SZK002942",
+      "title": "蒙古襲来絵詞｜皇居三の丸尚蔵館 The Museum of the Imperial Collections, Sannomaru Shozokan"
+    },
+    {
+      "url": "https://disaportal.gsi.go.jp/",
+      "status": 200,
+      "final_url": "https://disaportal.gsi.go.jp/",
+      "title": "ハザードマップポータルサイト"
+    },
+    {
+      "url": "https://docs.ankiweb.net/importing/packaged-decks.html",
+      "status": 200,
+      "final_url": "https://docs.ankiweb.net/manual/importing/packaged-decks",
+      "title": "Packaged Decks - Anki Docs"
+    },
+    {
+      "url": "https://docs.ankiweb.net/importing/text-files.html",
+      "status": 200,
+      "final_url": "https://docs.ankiweb.net/manual/importing/text-files",
+      "title": "Text Files - Anki Docs"
+    },
+    {
+      "url": "https://edo-tokyo-museum.or.jp/library/reference/5798.html",
+      "status": 200,
+      "final_url": "https://edo-tokyo-museum.or.jp/library/reference/5798.html",
+      "title": "生類憐みの令はどのような法令か。｜江戸東京博物館"
+    },
+    {
+      "url": "https://encyclopedia.ushmm.org/content/en/article/introduction-to-the-holocaust",
+      "status": 200,
+      "final_url": "https://encyclopedia.ushmm.org/content/en/article/introduction-to-the-holocaust",
+      "title": "Introduction to the Holocaust: What was the Holocaust? | Holocaust Encyclopedia"
+    },
+    {
+      "url": "https://european-union.europa.eu/principles-countries-history/principles-and-values/aims-and-values_en",
+      "status": 200,
+      "final_url": "https://european-union.europa.eu/principles-countries-history/principles-and-values/aims-and-values_en",
+      "title": "Aims and values | European Union"
+    },
+    {
+      "url": "https://kyoto-museums.city.kyoto.lg.jp/feature-column/gardens/",
+      "status": 200,
+      "final_url": "https://kyoto-museums.city.kyoto.lg.jp/feature-column/gardens/",
+      "title": "庭園文化 | 知る・学ぶコンテンツ | 京博連"
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/law/405AC0000000088",
+      "status": 200,
+      "final_url": "https://laws.e-gov.go.jp/law/405AC0000000088",
+      "title": "e-Gov 法令検索"
+    },
+    {
+      "url": "https://maps.gsi.go.jp/",
+      "status": 200,
+      "final_url": "https://maps.gsi.go.jp/",
+      "title": "地理院地図 / GSI Maps | 国土地理院"
+    },
+    {
+      "url": "https://sdgs.un.org/goals",
+      "status": 200,
+      "final_url": "https://sdgs.un.org/goals",
+      "title": "THE 17 GOALS | Sustainable Development"
+    },
+    {
+      "url": "https://unfccc.int/process-and-meetings/the-paris-agreement",
+      "status": 200,
+      "final_url": "https://unfccc.int/process-and-meetings/the-paris-agreement",
+      "title": null
+    },
+    {
+      "url": "https://web-japan.org/kidsweb/ja/explore/history/index.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/138/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.ainu-assn.or.jp/ainupeople/",
+      "status": 200,
+      "final_url": "https://www.ainu-assn.or.jp/ainupeople/",
+      "title": "公益社団法人 北海道アイヌ協会"
+    },
+    {
+      "url": "https://www.archives.go.jp/ayumi/kobetsu/m06_1873_02.html",
+      "status": 200,
+      "final_url": "https://www.archives.go.jp/ayumi/kobetsu/m06_1873_02.html",
+      "title": "����6�N�i1873�j2���b�L���X�g���֎~�̍��D���P�p�����F���{�̂����"
+    },
+    {
+      "url": "https://www.archives.go.jp/ayumi/table.html",
+      "status": 200,
+      "final_url": "https://www.archives.go.jp/ayumi/table.html",
+      "title": "�N�\\/HTML�F���{�̂����"
+    },
+    {
+      "url": "https://www.archives.go.jp/exhibition/digital/hatamotogokenin/shousai.html",
+      "status": 200,
+      "final_url": "https://www.archives.go.jp/exhibition/digital/hatamotogokenin/shousai.html",
+      "title": "���{��Ɛl - �����ꗗ �F ������������"
+    },
+    {
+      "url": "https://www.archives.go.jp/learning/archive_collection_8/",
+      "status": 200,
+      "final_url": "https://www.archives.go.jp/learning/archive_collection_8/",
+      "title": "国立公文書館 学習コンテンツ | 高度経済成長期の時代 国民所得倍増計画"
+    },
+    {
+      "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "status": 200,
+      "final_url": "https://www.archives.gov/founding-docs/declaration-transcript",
+      "title": "Declaration of Independence: A Transcription | National Archives"
+    },
+    {
+      "url": "https://www.boj.or.jp/about/education/oshiete/glossary/economy/e03.htm",
+      "status": 200,
+      "final_url": "https://www.boj.or.jp/about/education/oshiete/glossary/economy/e03.htm",
+      "title": "GDP、実質GDP : 日本銀行 Bank of Japan"
+    },
+    {
+      "url": "https://www.boj.or.jp/about/education/oshiete/index.htm",
+      "status": 200,
+      "final_url": "https://www.boj.or.jp/about/education/oshiete/index.htm",
+      "title": "教えて！にちぎん : 日本銀行 Bank of Japan"
+    },
+    {
+      "url": "https://www.boj.or.jp/about/education/oshiete/seisaku/b34.htm",
+      "status": 200,
+      "final_url": "https://www.boj.or.jp/about/education/oshiete/seisaku/b34.htm",
+      "title": "オペレーション（公開市場操作）にはどのような種類がありますか？ : 日本銀行 Bank of Japan"
+    },
+    {
+      "url": "https://www.boj.or.jp/about/education/oshiete/statistics/h07.htm",
+      "status": 200,
+      "final_url": "https://www.boj.or.jp/about/education/oshiete/statistics/h07.htm",
+      "title": "「マネーストック」とは何ですか？ : 日本銀行 Bank of Japan"
+    },
+    {
+      "url": "https://www.boj.or.jp/statistics/outline/exp/exbpsm6.htm",
+      "status": 200,
+      "final_url": "https://www.boj.or.jp/statistics/outline/exp/exbpsm6.htm",
+      "title": "「国際収支関連統計（IMF国際収支マニュアル第6版ベース）」の解説 : 日本銀行 Bank of Japan"
+    },
+    {
+      "url": "https://www.bousai.go.jp/kyoiku/keigen/index.html",
+      "status": 200,
+      "final_url": "https://www.bousai.go.jp/kyoiku/keigen/index.html",
+      "title": "災害被害を軽減する国民運動 : 防災情報のページ - 内閣府"
+    },
+    {
+      "url": "https://www.caa.go.jp/policies/policy/consumer_education/consumer_education/lower_the_age_of_adulthood/",
+      "status": 200,
+      "final_url": "https://www.caa.go.jp/policies/policy/consumer_education/consumer_education/lower_the_age_of_adulthood/",
+      "title": "「18歳から大人」特設ページ | 消費者庁"
+    },
+    {
+      "url": "https://www.caa.go.jp/policies/policy/consumer_transaction/amendment/2021/notice03/index.html",
+      "status": 200,
+      "final_url": "https://www.caa.go.jp/policies/policy/consumer_transaction/amendment/2021/notice03/index.html",
+      "title": "インターネット通販の定期購入トラブルには御注意を! 令和4年6月1日から、通販の注文時に内容を確認する際の表示がより明確になります。 | 消費者庁"
+    },
+    {
+      "url": "https://www.city.kitakyushu.lg.jp/contents/924_10814.html",
+      "status": 200,
+      "final_url": "https://www.city.kitakyushu.lg.jp/contents/924_10814.html",
+      "title": "公害克服への取り組み - 北九州市"
+    },
+    {
+      "url": "https://www.city.matsue.lg.jp/soshikikarasagasu/kansaiinjimukyoku/kansa/1/3669.html",
+      "status": 200,
+      "final_url": "https://www.city.matsue.lg.jp/soshikikarasagasu/kansaiinjimukyoku/kansa/1/3669.html",
+      "title": "監査の種類(請求または要求に基づいて行う監査)／松江市ホームページ"
+    },
+    {
+      "url": "https://www.city.nagasaki.lg.jp/page/1178.html",
+      "status": 200,
+      "final_url": "https://www.city.nagasaki.lg.jp/page/1178.html",
+      "title": "野母村絵踏帳 - 長崎市ウェブサイト（文化財課）"
+    },
+    {
+      "url": "https://www.city.nagasaki.lg.jp/page/3156.html",
+      "status": 200,
+      "final_url": "https://www.city.nagasaki.lg.jp/page/3156.html",
+      "title": "シュガーロードとは - 長崎市ウェブサイト（商業振興課）"
+    },
+    {
+      "url": "https://www.city.okayama.jp/shisei/0000077967.html",
+      "status": 200,
+      "final_url": "https://www.city.okayama.jp/shisei/0000077967.html",
+      "title": "直接請求制度について | 岡山市"
+    },
+    {
+      "url": "https://www.courts.go.jp/about/sonota/kensin/seido_gaiyo/index.html",
+      "status": 200,
+      "final_url": "https://www.courts.go.jp/about/sonota/kensin/seido_gaiyo/index.html",
+      "title": "検察審査会の概要 | 裁判所"
+    },
+    {
+      "url": "https://www.courts.go.jp/saiban/syurui/index.html",
+      "status": 200,
+      "final_url": "https://www.courts.go.jp/saiban/syurui/index.html",
+      "title": "裁判所が扱う事件 | 裁判所"
+    },
+    {
+      "url": "https://www.enecho.meti.go.jp/category/others/kids/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.env.go.jp/earth/ondanka/lca/",
+      "status": 200,
+      "final_url": "https://www.env.go.jp/earth/ondanka/lca/",
+      "title": "再生可能エネルギー及び水素エネルギー等の温室効果ガス削減効果に関するLCAガイドライン | 地球環境・国際環境協力 | 環境省"
+    },
+    {
+      "url": "https://www.env.go.jp/policy/hakusyo/kodomo.html",
+      "status": 200,
+      "final_url": "https://www.env.go.jp/policy/hakusyo/kodomo.html",
+      "title": "環境省_こども環境白書"
+    },
+    {
+      "url": "https://www.gikai.metro.tokyo.lg.jp/",
+      "status": 200,
+      "final_url": "https://www.gikai.metro.tokyo.lg.jp/",
+      "title": "東京都議会"
+    },
+    {
+      "url": "https://www.gsi.go.jp/KIDS/",
+      "error": "<urlopen error [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)>"
+    },
+    {
+      "url": "https://www.gsi.go.jp/kohokocho/map-sign-tizukigou-2022-itiran.html",
+      "error": "<urlopen error [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)>"
+    },
+    {
+      "url": "https://www.icj-cij.org/how-the-court-works",
+      "status": 200,
+      "final_url": "https://www.icj-cij.org/how-the-court-works",
+      "title": "How the Court Works | INTERNATIONAL COURT OF JUSTICE"
+    },
+    {
+      "url": "https://www.jfa.maff.go.jp/j/kikaku/wpaper/",
+      "status": 200,
+      "final_url": "https://www.jfa.maff.go.jp/j/kikaku/wpaper/",
+      "title": "水産白書：水産庁"
+    },
+    {
+      "url": "https://www.jftc.go.jp/dk/dk_qa.html",
+      "status": 200,
+      "final_url": "https://www.jftc.go.jp/dk/dk_qa.html",
+      "title": "よくある質問コーナー(独占禁止法) | 公正取引委員会"
+    },
+    {
+      "url": "https://www.jma.go.jp/jma/kishou/know/faq/faq3.html",
+      "status": 200,
+      "final_url": "https://www.jma.go.jp/jma/kishou/know/faq/faq3.html",
+      "title": "気温について | 気象庁"
+    },
+    {
+      "url": "https://www.jma.go.jp/jma/kishou/know/kisetsu_riyou/tenkou/gaisetu.html",
+      "status": 200,
+      "final_url": "https://www.jma.go.jp/jma/kishou/know/kisetsu_riyou/tenkou/gaisetu.html",
+      "title": "日本の天候の概説 | 気象庁"
+    },
+    {
+      "url": "https://www.jma.go.jp/jma/kishou/know/stats/dounyu_5.html",
+      "status": 200,
+      "final_url": "https://www.jma.go.jp/jma/kishou/know/stats/dounyu_5.html",
+      "title": "第5章 平年値 | 気象庁"
+    },
+    {
+      "url": "https://www.maff.go.jp/chushi/sesaku/sixth/",
+      "status": 200,
+      "final_url": "https://www.maff.go.jp/chushi/sesaku/sixth/",
+      "title": "農山漁村の6次産業化：中国四国農政局"
+    },
+    {
+      "url": "https://www.maff.go.jp/j/zyukyu/zikyu_ritu/012.html",
+      "status": 200,
+      "final_url": "https://www.maff.go.jp/j/zyukyu/zikyu_ritu/012.html",
+      "title": "日本の食料自給率：農林水産省"
+    },
+    {
+      "url": "https://www.metmuseum.org/essays",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1387016.htm",
+      "status": 200,
+      "final_url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1387016.htm",
+      "title": "中学校学習指導要領解説：文部科学省"
+    },
+    {
+      "url": "https://www.mext.go.jp/content/20240919-mxt_kyoiku01-100002608.pdf",
+      "status": 200,
+      "final_url": "https://www.mext.go.jp/content/20240919-mxt_kyoiku01-100002608.pdf",
+      "title": null
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/newpage_21479.html",
+      "status": 200,
+      "final_url": "https://www.mhlw.go.jp/stf/newpage_21479.html",
+      "title": "社会保障とは何か｜厚生労働省"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/index.html",
+      "status": 200,
+      "final_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/index.html",
+      "title": "労働基準 ｜厚生労働省"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/roudouzikan/index.html",
+      "status": 200,
+      "final_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/roudouzikan/index.html",
+      "title": "労働時間・休日 ｜厚生労働省"
+    },
+    {
+      "url": "https://www.mlit.go.jp/",
+      "status": 200,
+      "final_url": "https://www.mlit.go.jp/",
+      "title": "国土交通省"
+    },
+    {
+      "url": "https://www.mof.go.jp/faq/budget/01ad.htm",
+      "status": 200,
+      "final_url": "https://www.mof.go.jp/faq/budget/01ad.htm",
+      "title": "基礎的財政収支とは何ですか。何が分かりますか : 財務省"
+    },
+    {
+      "url": "https://www.mof.go.jp/zaisei/index.htm",
+      "status": 200,
+      "final_url": "https://www.mof.go.jp/zaisei/index.htm",
+      "title": "「日本の財政を考える」: 財務省"
+    },
+    {
+      "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/page24_001761.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.mofa.go.jp/mofaj/area/index.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.mofa.go.jp/mofaj/gaiko/fta/index.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.mofa.go.jp/mofaj/gaiko/kaku/gensoku/ketsugi.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.mofa.go.jp/mofaj/gaiko/kaku/npt/gaiyo.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.mofa.go.jp/mofaj/gaiko/oda/about/index.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.mofa.go.jp/mofaj/territory/index.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.moj.go.jp/JINKEN/jinken88",
+      "status": 200,
+      "final_url": "https://www.moj.go.jp/JINKEN/jinken88",
+      "title": "法務省：インターネット上の人権侵害をなくしましょう"
+    },
+    {
+      "url": "https://www.moj.go.jp/MINJI/minji07_00218.html",
+      "status": 200,
+      "final_url": "https://www.moj.go.jp/MINJI/minji07_00218.html",
+      "title": "法務省：民法の一部を改正する法律（成年年齢関係）について"
+    },
+    {
+      "url": "https://www.nabunken.go.jp/fujiwara/",
+      "status": 200,
+      "final_url": "https://www.nabunken.go.jp/fujiwara/",
+      "title": "奈良文化財研究所ホームページ"
+    },
+    {
+      "url": "https://www.ndl.go.jp/constitution/etc/j01.html",
+      "status": 200,
+      "final_url": "https://www.ndl.go.jp/constitution/etc/j01.html",
+      "title": "憲法条文・重要文書 | 日本国憲法の誕生"
+    },
+    {
+      "url": "https://www.ndl.go.jp/modern/",
+      "status": 200,
+      "final_url": "https://www.ndl.go.jp/modern/",
+      "title": "史料にみる日本の近代"
+    },
+    {
+      "url": "https://www.ndl.go.jp/zoshoin/collection/30.html",
+      "status": 200,
+      "final_url": "https://www.ndl.go.jp/zoshoin/collection/30.html",
+      "title": "渡辺崋山 | 蔵書印の世界"
+    },
+    {
+      "url": "https://www.no-trouble.caa.go.jp/what/",
+      "error": "The read operation timed out"
+    },
+    {
+      "url": "https://www.no-trouble.caa.go.jp/what/mailorder/",
+      "status": 200,
+      "final_url": "https://www.no-trouble.caa.go.jp/what/mailorder/",
+      "title": "通信販売｜特定商取引法ガイド"
+    },
+    {
+      "url": "https://www.parliament.uk/about/living-heritage/evolutionofparliament/parliamentaryauthority/revolution/overview/billofrights/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.pref.kagawa.lg.jp/tochikai/yousui/yousui_gaiyou.html",
+      "status": 200,
+      "final_url": "https://www.pref.kagawa.lg.jp/tochikai/yousui/yousui_gaiyou.html",
+      "title": "香川用水の概要｜香川県"
+    },
+    {
+      "url": "https://www.pref.okinawa.jp/kensei/kengaiyo/1023611/1037743.html",
+      "status": 200,
+      "final_url": "https://www.pref.okinawa.jp/kensei/kengaiyo/1023611/1037743.html",
+      "title": "おきなわのすがた（県勢概要） 令和6年度版｜沖縄県公式ホームページ"
+    },
+    {
+      "url": "https://www.pref.osaka.lg.jp/o180040/kotogakko/gakuji-g3/index.html",
+      "status": 200,
+      "final_url": "https://www.pref.osaka.lg.jp/o180040/kotogakko/gakuji-g3/index.html",
+      "title": "公立高等学校入学者選抜／大阪府（おおさかふ）ホームページ [Osaka Prefectural Government]"
+    },
+    {
+      "url": "https://www.rekihaku.ac.jp/learning/for_student/",
+      "status": 200,
+      "final_url": "https://www.rekihaku.ac.jp/learning/for_student/",
+      "title": "小・中・高生のみなさまへ | 国立歴史民俗博物館"
+    },
+    {
+      "url": "https://www.rekishi-archive.city.naha.okinawa.jp/history",
+      "status": 200,
+      "final_url": "https://www.rekishi-archive.city.naha.okinawa.jp/history",
+      "title": "王朝⽂化と都市の歴史 | 那覇市歴史博物館"
+    },
+    {
+      "url": "https://www.rinya.maff.go.jp/j/kanbatu/suisin/kanbatu.html",
+      "status": 200,
+      "final_url": "https://www.rinya.maff.go.jp/j/kanbatu/suisin/kanbatu.html",
+      "title": "間伐とは？：林野庁"
+    },
+    {
+      "url": "https://www.saibanin.courts.go.jp/introduction/index.html",
+      "status": 200,
+      "final_url": "https://www.courts.go.jp/saibanin/introduction/index.html",
+      "title": "裁判員制度の概要 | 裁判所"
+    },
+    {
+      "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/kensei/kensei-tokubetsuH21.htm",
+      "status": 200,
+      "final_url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/kensei/kensei-tokubetsuH21.htm",
+      "title": "�u�����̖������ƌ��݁v���ʓW"
+    },
+    {
+      "url": "https://www.stat.go.jp/data/jinsui/7.html",
+      "status": 200,
+      "final_url": "https://www.stat.go.jp/data/jinsui/7.html",
+      "title": "���v�ǃz�[���y�[�W/�l�����v �p��̉��"
+    },
+    {
+      "url": "https://www.stat.go.jp/naruhodo/index.html",
+      "status": 200,
+      "final_url": "https://www.stat.go.jp/naruhodo/index.html",
+      "title": "なるほど統計学園TOP"
+    },
+    {
+      "url": "https://www.tekijuku.osaka-u.ac.jp/ja",
+      "error": "The read operation timed out"
+    },
+    {
+      "url": "https://www.un.org/en/about-us/history-of-the-un",
+      "status": 200,
+      "final_url": "https://www.un.org/en/about-us/history-of-the-un",
+      "title": "History of the United Nations | United Nations"
+    },
+    {
+      "url": "https://www.un.org/en/about-us/main-bodies",
+      "status": 200,
+      "final_url": "https://www.un.org/en/about-us/main-bodies",
+      "title": "Main Bodies | United Nations"
+    },
+    {
+      "url": "https://www.unhcr.org/about-unhcr/who-we-protect/refugees",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.unhcr.org/jp/stateless",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.unic.or.jp/info/un/un_organization/icj/faq/",
+      "status": 200,
+      "final_url": "https://www.unic.or.jp/info/un/un_organization/icj/faq/",
+      "title": "国際司法裁判所（ICJ）-よくある質問- | 国連広報センター"
+    },
+    {
+      "url": "https://www.wto.org/english/thewto_e/whatis_e/whatis_e.htm",
+      "status": 200,
+      "final_url": "https://www.wto.org/english/thewto_e/whatis_e/whatis_e.htm",
+      "title": "WTO | What is the WTO?"
+    },
+    {
+      "url": "https://www1.kaiho.mlit.go.jp/JODC/ryokai/ryokai.html",
+      "status": 200,
+      "final_url": "https://www1.kaiho.mlit.go.jp/ryokai/index.html",
+      "title": "管轄海域情報｜海上保安庁 海洋情報部"
+    },
+    {
+      "url": "https://www1.kaiho.mlit.go.jp/ryokai/yougo.html",
+      "status": 200,
+      "final_url": "https://www1.kaiho.mlit.go.jp/ryokai/yougo.html",
+      "title": "領海等に関する用語"
+    },
+    {
+      "url": "https://www8.cao.go.jp/shougai/whitepaper/r01hakusho/zenbun/h1_01_03_02.html",
+      "status": 200,
+      "final_url": "https://www8.cao.go.jp/shougai/whitepaper/r01hakusho/zenbun/h1_01_03_02.html",
+      "title": "第１章 障害のある人に対する理解を深めるための基盤づくり 第３節 ２｜令和元年版障害者白書（全体版） - 内閣府"
+    },
+    {
+      "url": "https://wwwtb.mlit.go.jp/kyushu/00001_00620.html",
+      "status": 200,
+      "final_url": "https://wwwtb.mlit.go.jp/kyushu/00001_00620.html",
+      "title": "���[�_���V�t�g�֘A��� - ��B�^�A��"
+    },
+    {
+      "url": "https://www.sangiin.go.jp/jpn/shiryo/kiso/index.html",
+      "status": 200,
+      "final_url": "https://www.sangiin.go.jp/jpn/shiryo/kiso/index.html",
+      "title": "国会の基礎知識：参議院"
+    }
+  ]
+}
