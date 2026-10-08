@@ -62,7 +62,7 @@ assert.equal(documents.size, report.pages);
 const catalog = JSON.parse(await readFile(path.join(out, 'catalog.json'), 'utf8')) as { path: string; section: string; lesson: boolean }[];
 assert.equal(catalog.filter(p => p.section === '社会' && p.lesson).length, 76, 'All 76 original social units must remain');
 assert.equal(catalog.filter(p => p.lesson).length, report.lessons);
-const expected: Record<string, number> = { social: 1293, science: 857, english: 2286, conversation: 206, art: 62, basics: 500 };
+const expected: Record<string, number> = { social: 2105, science: 857, english: 2286, conversation: 206, art: 62, basics: 500 };
 assert.deepEqual(Object.fromEntries(report.decks.map((d: { id: string; count: number }) => [d.id, d.count])), expected, 'All downloadable card counts must remain unchanged');
 assert(!files.has('search.json'), 'No application search index');
 assert(![...files].some(f => f.startsWith('data/') || /\.(?:m?js|map)$/.test(f)), 'No application payloads');

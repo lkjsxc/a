@@ -10,13 +10,13 @@
 
 - lesson_counts: {'foundation': 4, 'geography': 27, 'history': 27, 'civics': 18}
 
-- lesson_cards: 1246
+- lesson_cards: 2058
 
 - atlas_cards: 47
 
-- anki_cards: 1293
+- anki_cards: 2105
 
-- lesson_questions: 228
+- lesson_questions: 456
 
 - worked_examples: 12
 
@@ -26,7 +26,27 @@
 
 - timeline_entries: 119
 
-- reading_characters: 64643
+- reading_characters: 147642
+
+## 増補の適用範囲
+
+2026年10月8日、地理・歴史・公民の72単元を増補しました。基礎4単元も改稿し、全76単元に各6問を収録しました。
+
+本文量は見出し・文章・本文内の参照リンクを含め、空白を除く同一基準で比較しています。カードの説明・問題・生成HTMLのタグを文字数の倍増に含めていません。
+
+{
+  "baseline_available": true,
+  "baseline_commit": "0e70b2196f1ecbc2bdbbcf0b41d0a5943a5bc10b",
+  "measurement": "Each lesson main-text source only; whitespace removed. Excludes vocabulary tables, answers, generated HTML/ruby, duplicate formats and appendices. Headings and inline source links are retained equally in both versions.",
+  "before_body_characters": 63416,
+  "after_body_characters": 147642,
+  "body_ratio": 2.328,
+  "before_anki_cards": 1293,
+  "after_anki_cards": 2105,
+  "before_questions": 228,
+  "after_questions": 456,
+  "original_note_ids_and_fronts_preserved": true
+}
 
 ## 自動検査
 
@@ -38,7 +58,7 @@
 
 - source reference IDs resolved
 
-- 3 answered questions per lesson
+- 6 questions per lesson across all 76 lessons
 
 - 3 assessments x 24 questions; each exactly 100 points
 
@@ -54,7 +74,7 @@
 
 ## Ankiの検証範囲
 
-APKG内のSQLiteデータベースを開き、ノート数・カード数・一意なGUIDがそれぞれ1,293件で一致し、整合性検査が成功しました。CSV・TSVを再度読み込み、全フィールドの一致を確認しました。
+APKG内のSQLiteデータベースを開き、ノート数・カード数・一意なGUIDがそれぞれ2,105件で一致し、整合性検査が成功しました。CSV・TSVを再度読み込み、全フィールドの一致を確認しました。
 
 これはデスクトップ・スマートフォンのAnki画面での操作や同期の試験ではありません。更新前にはバックアップを取り、初回は数枚を開いてルビと裏面を確認してください。
 
@@ -81,6 +101,10 @@ Anki Python 26.9.3 の実際の取り込み処理を、個人データを含ま�
 ## ブラウザー表示試験
 
 Chromiumでデスクトップ幅・スマートフォン幅を確認し、単元数、表、スクリプトがないこと、解答の開閉、画像読込、横方向のはみ出し、印刷時の解答表示を検査しました。実機のSafariやAnkiアプリの画面を試験したものではありません。詳細は BROWSER_TEST.json にあります。
+
+
+## 旧版から増補版への取り込み
+旧版1,293ノートから増補版2,105ノートへの取り込みを、個人データを含まない一時コレクションで検証しました。既存ノートの全ID・GUIDの保持、812件の追加、10枚の試験用復習状態の保持、再取り込みによる重複がないことを確認しました。詳細は ANKI_UPGRADE_TEST.json を参照してください。
 
 
 生成済みのローカルファイル・画像リンクについて、参照先の存在を検査して成功しました。

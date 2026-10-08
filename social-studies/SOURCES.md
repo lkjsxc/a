@@ -48,7 +48,7 @@
 
 ## JMA　気象庁：日本の天候の特徴
 
-[気象庁：日本の天候の特徴](https://www.data.jma.go.jp/cpd/j_climate/japan_climate.html)
+[気象庁：日本の天候の特徴](https://www.jma.go.jp/jma/kishou/know/kisetsu_riyou/tenkou/gaisetu.html)
 
 日本の気候と季節変化。教材の雨温図は比較練習用の架空モデル。
 
@@ -84,11 +84,11 @@
 
 [詳しい資料](https://disaportal.gsi.go.jp/)
 
-## OKINAWA　沖縄県：県のあらまし
+## OKINAWA　沖縄県：おきなわのすがた（県勢概要・令和6年度版）
 
-[沖縄県：県のあらまし](https://www.pref.okinawa.jp/kensei/kennoaramashi/index.html)
+[沖縄県：おきなわのすがた（県勢概要・令和6年度版）](https://www.pref.okinawa.jp/kensei/kengaiyo/1023611/1037743.html)
 
-沖縄の歴史・地理・文化と現在の課題を調べる入口。
+沖縄の自然・人口・土地利用・歴史を調べる資料。統計の年次は各表で確認する。
 
 ## AINU　北海道アイヌ協会：アイヌ民族について
 
@@ -170,15 +170,15 @@ EUの統合・協力の目的。EU加盟とユーロ使用を区別する。
 
 ## DIET　参議院：国会のしくみと法律ができるまで
 
-[参議院：国会のしくみと法律ができるまで](https://www.sangiin.go.jp/japanese/aramashi/)
+[参議院：国会のしくみと法律ができるまで](https://www.sangiin.go.jp/jpn/shiryo/kiso/index.html)
 
 二院制、国会の種類、法律案・予算・首相指名などの手続き。
 
-## ELECTION　参議院：選挙制度
+## ELECTION　参議院：国会の基礎知識・選挙制度と歴史
 
-[参議院：選挙制度](https://www.sangiin.go.jp/japanese/aramashi/)
+[参議院：国会の基礎知識・選挙制度と歴史](https://www.sangiin.go.jp/jpn/shiryo/kiso/index.html)
 
-選挙権・被選挙権、衆参の選挙制度。手続きや直近の選挙は選挙管理委員会の最新案内を確認する。
+参議院の選挙制度の変遷と国会の基礎知識。手続きや直近の選挙は選挙管理委員会の最新案内を確認する。
 
 ## LOCAL_GOV　東京都議会：議会のしくみ・子供向け学習資料の入口
 
@@ -216,9 +216,9 @@ EUの統合・協力の目的。EU加盟とユーロ使用を区別する。
 
 対象となる刑事事件、参加と判断の仕組み。
 
-## JFTC　公正取引委員会：こどもホームページ
+## JFTC　公正取引委員会：よくある質問コーナー（独占禁止法）
 
-[公正取引委員会：こどもホームページ](https://www.jftc.go.jp/kids/)
+[公正取引委員会：よくある質問コーナー（独占禁止法）](https://www.jftc.go.jp/dk/dk_qa.html)
 
 市場の競争、独占禁止法、公正取引委員会の役割。
 
@@ -242,7 +242,7 @@ EUの統合・協力の目的。EU加盟とユーロ使用を区別する。
 
 ## MHLW_WELFARE　厚生労働省：社会保障とは何か
 
-[厚生労働省：社会保障とは何か](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/shakaihoshou/index.html)
+[厚生労働省：社会保障とは何か](https://www.mhlw.go.jp/stf/newpage_21479.html)
 
 社会保険・社会福祉・公的扶助・保健医療等の制度。
 
@@ -325,3 +325,11 @@ FTAとEPAの目的と違い。締結状況は更新される。
 [Anki公式マニュアル：APKG更新](https://docs.ankiweb.net/importing/packaged-decks.html) / [Anki旧取り込みAPIの変更記録](https://github.com/ankitects/anki/issues/5307)
 
 上記と憲法条文などの重要な制度を確認しました。全リンク先の全文章を逐語的に照合したとの意味ではなく、専門家の独立査読・入試難易度の標準化は未実施です。
+
+## 2026年10月8日の増補
+
+地理・歴史・公民の追加本文には、制度や資料の解説へのリンクを付けています。初版の全情報を同日に再確認したものではありません。新しい数値問題は学習用の架空例です。
+
+[追加原稿と参照リンクの一覧](expansion-sources.md)
+
+基礎4単元も定義・仕組み・具体例を説明する文体へ改稿し、各6問を収録しました。

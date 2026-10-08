@@ -1,0 +1,775 @@
+{
+  "baseline_available": true,
+  "baseline_commit": "0e70b2196f1ecbc2bdbbcf0b41d0a5943a5bc10b",
+  "measurement": "Each lesson main-text source only; whitespace removed. Excludes vocabulary tables, answers, generated HTML/ruby, duplicate formats and appendices. Headings and inline source links are retained equally in both versions.",
+  "before_body_characters": 63416,
+  "after_body_characters": 147642,
+  "body_ratio": 2.328,
+  "before_anki_cards": 1293,
+  "after_anki_cards": 2105,
+  "before_questions": 228,
+  "after_questions": 456,
+  "original_note_ids_and_fronts_preserved": true,
+  "lessons": [
+    {
+      "lesson": "F01",
+      "before_characters": 623,
+      "after_characters": 1344,
+      "body_ratio": 2.157,
+      "before_cards": 12,
+      "after_cards": 12,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "F02",
+      "before_characters": 675,
+      "after_characters": 1429,
+      "body_ratio": 2.117,
+      "before_cards": 12,
+      "after_cards": 12,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "F03",
+      "before_characters": 840,
+      "after_characters": 1538,
+      "body_ratio": 1.831,
+      "before_cards": 13,
+      "after_cards": 13,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "F04",
+      "before_characters": 691,
+      "after_characters": 1460,
+      "body_ratio": 2.113,
+      "before_cards": 12,
+      "after_cards": 12,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G01",
+      "before_characters": 625,
+      "after_characters": 1476,
+      "body_ratio": 2.362,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G02",
+      "before_characters": 683,
+      "after_characters": 1594,
+      "body_ratio": 2.334,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G03",
+      "before_characters": 685,
+      "after_characters": 1569,
+      "body_ratio": 2.291,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G04",
+      "before_characters": 659,
+      "after_characters": 1627,
+      "body_ratio": 2.469,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G05",
+      "before_characters": 628,
+      "after_characters": 1676,
+      "body_ratio": 2.669,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G06",
+      "before_characters": 644,
+      "after_characters": 1577,
+      "body_ratio": 2.449,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G07",
+      "before_characters": 713,
+      "after_characters": 1714,
+      "body_ratio": 2.404,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G08",
+      "before_characters": 681,
+      "after_characters": 1660,
+      "body_ratio": 2.438,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G09",
+      "before_characters": 680,
+      "after_characters": 1633,
+      "body_ratio": 2.401,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G10",
+      "before_characters": 655,
+      "after_characters": 1642,
+      "body_ratio": 2.507,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G11",
+      "before_characters": 688,
+      "after_characters": 1677,
+      "body_ratio": 2.438,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G12",
+      "before_characters": 647,
+      "after_characters": 1648,
+      "body_ratio": 2.547,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G13",
+      "before_characters": 796,
+      "after_characters": 1829,
+      "body_ratio": 2.298,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G14",
+      "before_characters": 666,
+      "after_characters": 1618,
+      "body_ratio": 2.429,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G15",
+      "before_characters": 673,
+      "after_characters": 1816,
+      "body_ratio": 2.698,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G16",
+      "before_characters": 748,
+      "after_characters": 1844,
+      "body_ratio": 2.465,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G17",
+      "before_characters": 746,
+      "after_characters": 1816,
+      "body_ratio": 2.434,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G18",
+      "before_characters": 690,
+      "after_characters": 1768,
+      "body_ratio": 2.562,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G19",
+      "before_characters": 708,
+      "after_characters": 1843,
+      "body_ratio": 2.603,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G20",
+      "before_characters": 698,
+      "after_characters": 1732,
+      "body_ratio": 2.481,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G21",
+      "before_characters": 679,
+      "after_characters": 1764,
+      "body_ratio": 2.598,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G22",
+      "before_characters": 672,
+      "after_characters": 1696,
+      "body_ratio": 2.524,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G23",
+      "before_characters": 666,
+      "after_characters": 1586,
+      "body_ratio": 2.381,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G24",
+      "before_characters": 712,
+      "after_characters": 1682,
+      "body_ratio": 2.362,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G25",
+      "before_characters": 708,
+      "after_characters": 1746,
+      "body_ratio": 2.466,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G26",
+      "before_characters": 708,
+      "after_characters": 1813,
+      "body_ratio": 2.561,
+      "before_cards": 14,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "G27",
+      "before_characters": 753,
+      "after_characters": 1894,
+      "body_ratio": 2.515,
+      "before_cards": 12,
+      "after_cards": 22,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H01",
+      "before_characters": 727,
+      "after_characters": 1760,
+      "body_ratio": 2.421,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H02",
+      "before_characters": 697,
+      "after_characters": 1735,
+      "body_ratio": 2.489,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H03",
+      "before_characters": 678,
+      "after_characters": 1640,
+      "body_ratio": 2.419,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H04",
+      "before_characters": 738,
+      "after_characters": 1759,
+      "body_ratio": 2.383,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H05",
+      "before_characters": 751,
+      "after_characters": 1731,
+      "body_ratio": 2.305,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H06",
+      "before_characters": 719,
+      "after_characters": 1726,
+      "body_ratio": 2.401,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H07",
+      "before_characters": 742,
+      "after_characters": 1863,
+      "body_ratio": 2.511,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H08",
+      "before_characters": 733,
+      "after_characters": 1848,
+      "body_ratio": 2.521,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H09",
+      "before_characters": 756,
+      "after_characters": 1877,
+      "body_ratio": 2.483,
+      "before_cards": 20,
+      "after_cards": 32,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H10",
+      "before_characters": 885,
+      "after_characters": 1934,
+      "body_ratio": 2.185,
+      "before_cards": 21,
+      "after_cards": 33,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H11",
+      "before_characters": 767,
+      "after_characters": 1858,
+      "body_ratio": 2.422,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H12",
+      "before_characters": 773,
+      "after_characters": 1823,
+      "body_ratio": 2.358,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H13",
+      "before_characters": 820,
+      "after_characters": 1965,
+      "body_ratio": 2.396,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H14",
+      "before_characters": 805,
+      "after_characters": 1960,
+      "body_ratio": 2.435,
+      "before_cards": 16,
+      "after_cards": 28,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H15",
+      "before_characters": 798,
+      "after_characters": 1896,
+      "body_ratio": 2.376,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H16",
+      "before_characters": 791,
+      "after_characters": 1916,
+      "body_ratio": 2.422,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H17",
+      "before_characters": 792,
+      "after_characters": 1942,
+      "body_ratio": 2.452,
+      "before_cards": 20,
+      "after_cards": 32,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H18",
+      "before_characters": 904,
+      "after_characters": 2045,
+      "body_ratio": 2.262,
+      "before_cards": 22,
+      "after_cards": 34,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H19",
+      "before_characters": 842,
+      "after_characters": 1927,
+      "body_ratio": 2.289,
+      "before_cards": 20,
+      "after_cards": 32,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H20",
+      "before_characters": 990,
+      "after_characters": 2302,
+      "body_ratio": 2.325,
+      "before_cards": 22,
+      "after_cards": 34,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H21",
+      "before_characters": 869,
+      "after_characters": 2064,
+      "body_ratio": 2.375,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H22",
+      "before_characters": 982,
+      "after_characters": 2058,
+      "body_ratio": 2.096,
+      "before_cards": 22,
+      "after_cards": 34,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H23",
+      "before_characters": 1062,
+      "after_characters": 2180,
+      "body_ratio": 2.053,
+      "before_cards": 24,
+      "after_cards": 36,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H24",
+      "before_characters": 1034,
+      "after_characters": 2284,
+      "body_ratio": 2.209,
+      "before_cards": 24,
+      "after_cards": 36,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H25",
+      "before_characters": 938,
+      "after_characters": 2171,
+      "body_ratio": 2.314,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H26",
+      "before_characters": 1008,
+      "after_characters": 2331,
+      "body_ratio": 2.312,
+      "before_cards": 22,
+      "after_cards": 34,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "H27",
+      "before_characters": 1050,
+      "after_characters": 2397,
+      "body_ratio": 2.283,
+      "before_cards": 16,
+      "after_cards": 28,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "C01",
+      "before_characters": 878,
+      "after_characters": 2133,
+      "body_ratio": 2.429,
+      "before_cards": 12,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "C02",
+      "before_characters": 866,
+      "after_characters": 2002,
+      "body_ratio": 2.312,
+      "before_cards": 12,
+      "after_cards": 24,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "C03",
+      "before_characters": 868,
+      "after_characters": 2089,
+      "body_ratio": 2.407,
+      "before_cards": 16,
+      "after_cards": 28,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "C04",
+      "before_characters": 883,
+      "after_characters": 2148,
+      "body_ratio": 2.433,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "C05",
+      "before_characters": 942,
+      "after_characters": 2159,
+      "body_ratio": 2.292,
+      "before_cards": 16,
+      "after_cards": 28,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "C06",
+      "before_characters": 905,
+      "after_characters": 2149,
+      "body_ratio": 2.375,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "C07",
+      "before_characters": 942,
+      "after_characters": 2270,
+      "body_ratio": 2.41,
+      "before_cards": 16,
+      "after_cards": 28,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "C08",
+      "before_characters": 1031,
+      "after_characters": 2394,
+      "body_ratio": 2.322,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "C09",
+      "before_characters": 1326,
+      "after_characters": 2689,
+      "body_ratio": 2.028,
+      "before_cards": 19,
+      "after_cards": 31,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "C10",
+      "before_characters": 1051,
+      "after_characters": 2454,
+      "body_ratio": 2.335,
+      "before_cards": 16,
+      "after_cards": 28,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "C11",
+      "before_characters": 1558,
+      "after_characters": 2889,
+      "body_ratio": 1.854,
+      "before_cards": 20,
+      "after_cards": 32,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "C12",
+      "before_characters": 1022,
+      "after_characters": 2354,
+      "body_ratio": 2.303,
+      "before_cards": 18,
+      "after_cards": 30,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "C13",
+      "before_characters": 1317,
+      "after_characters": 2673,
+      "body_ratio": 2.03,
+      "before_cards": 17,
+      "after_cards": 29,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "C14",
+      "before_characters": 1060,
+      "after_characters": 2400,
+      "body_ratio": 2.264,
+      "before_cards": 16,
+      "after_cards": 28,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "C15",
+      "before_characters": 1052,
+      "after_characters": 2377,
+      "body_ratio": 2.26,
+      "before_cards": 16,
+      "after_cards": 28,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "C16",
+      "before_characters": 1019,
+      "after_characters": 2327,
+      "body_ratio": 2.284,
+      "before_cards": 14,
+      "after_cards": 26,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "C17",
+      "before_characters": 1486,
+      "after_characters": 2914,
+      "body_ratio": 1.961,
+      "before_cards": 20,
+      "after_cards": 32,
+      "before_questions": 3,
+      "after_questions": 6
+    },
+    {
+      "lesson": "C18",
+      "before_characters": 1119,
+      "after_characters": 2518,
+      "body_ratio": 2.25,
+      "before_cards": 16,
+      "after_cards": 28,
+      "before_questions": 3,
+      "after_questions": 6
+    }
+  ]
+}

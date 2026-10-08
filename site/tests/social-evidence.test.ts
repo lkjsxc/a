@@ -1,0 +1,21 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+const digest=(p:string)=>createHash('sha256').update(readFileSync(p)).digest('hex');
+const read=(p:string)=>JSON.parse(readFileSync(`social-studies/${p}`,'utf8'));
+test('release evidence identifies the current inputs and distributed artifacts',()=>{
+ const report=read('BUILD_REPORT.json');assert.equal(report.status,'passed');
+ for(const [p,hash] of Object.entries(report.input_sha256)) assert.equal(digest(`social-studies/${p}`),hash,`Stale build input: ${p}`);
+ assert.equal(digest('editorial/ruby.json'),digest('social-studies/ruby-policy.json'));
+ assert.equal(digest('editorial/social-baseline-20261008.json'),digest('social-studies/baseline-20261008.json'));
+ for(const [p,hash] of Object.entries(report.artifact_sha256)) assert.equal(digest(`social-studies/${p}`),hash,`Stale build artifact: ${p}`);
+ const apkg=digest('social-studies/anki/social-studies.apkg');
+ const fresh=read('ANKI_IMPORT_TEST.json'),upgrade=read('ANKI_UPGRADE_TEST.json'),browser=read('BROWSER_TEST.json');
+ assert.equal(fresh.backend_test,'passed');assert.equal(upgrade.status,'passed');assert.equal(browser.status,'passed');
+ assert.equal(fresh.artifact_sha256,apkg);assert.equal(upgrade.current_apkg_sha256,apkg);
+ for(const r of [fresh,upgrade,browser])assert.equal(r.input_tree_sha256,report.input_tree_sha256);
+ for(const r of browser.pages_and_viewports)assert.equal(digest(`social-studies/${r.file}`),r.sha256);
+ assert.equal(upgrade.new_notes-upgrade.old_notes,upgrade.new_only_notes);
+ assert.equal(upgrade.all_imported_fields_match_package,true);
+});

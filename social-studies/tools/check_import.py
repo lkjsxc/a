@@ -5,7 +5,10 @@ Install `anki` into a separate test environment; this is not a build dependency.
 An unsupported backend API is a failed/unsupported test, not a successful import.
 """
 from __future__ import annotations
+import evidence
 import importlib.metadata
+import csv
+from collections import Counter
 import json
 import hashlib
 import sqlite3
@@ -18,7 +21,8 @@ ROOT=Path(__file__).resolve().parents[1]
 
 
 def main() -> int:
-    report={'backend_test':'not_run','desktop_gui_tested':False,'mobile_sync_tested':False}
+    report={**evidence.inputs(ROOT),'artifact_sha256':evidence.sha256(ROOT/'anki/social-studies.apkg'),'backend_test':'not_run','desktop_gui_tested':False,'mobile_sync_tested':False}
+    evidence.write(ROOT,'ANKI_IMPORT_TEST.json',report)
     try:
         from anki.collection import Collection, ImportAnkiPackageOptions, ImportAnkiPackageRequest
         from anki.lang import set_lang
@@ -37,6 +41,14 @@ def main() -> int:
                 first=col.db.scalar('select count(*) from notes')
                 card_count=col.db.scalar('select count(*) from cards')
                 assert first==card_count==expected,(first,card_count,expected)
+                # Compare independently parsed text formats with the actual Anki import.
+                imported=Counter((row[0].split('\x1f')[1],row[0].split('\x1f')[2],tuple(sorted(row[1].split()))) for row in col.db.all('SELECT flds,tags FROM notes'))
+                for filename,delimiter in [('cards.csv',','),('cards.tsv','\t')]:
+                    with (ROOT/'anki'/filename).open(encoding='utf-8',newline='') as stream:
+                        rows=list(csv.reader((line for line in stream if not line.startswith('#')),delimiter=delimiter))
+                    assert len(rows)==expected and all(len(row)==3 for row in rows)
+                    assert Counter((row[0],row[1],tuple(sorted(row[2].split()))) for row in rows)==imported,filename
+                report['csv_tsv_match_imported_html_and_tags']=True
                 cid=col.db.scalar('select id from cards order by id limit 1')
                 c=col.get_card(cid)
                 c.type=2;c.queue=2;c.ivl=12;c.due=42;c.reps=8;c.lapses=1;c.factor=2500

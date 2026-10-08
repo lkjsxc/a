@@ -48,6 +48,18 @@ test('answer disclosure works from the keyboard', async ({ page }) => {
   await expect(answer).toHaveAttribute('open','');
   await page.keyboard.press('Enter'); await expect(answer).not.toHaveAttribute('open');
 });
+test('expanded foundation and subject lessons expose all six answers', async ({ page }) => {
+  for (const id of ['F01','F02','F03','F04','G05','H13','C12']) {
+    await page.goto(`social-studies/textbook/${id}.html`);
+    const answers=page.locator('.prose details');
+    await expect(answers).toHaveCount(6);
+    await answers.last().locator('summary').click();
+    await expect(answers.last().locator('p').first()).toBeVisible();
+  }
+  await page.goto('social-studies/expansion-sources.html');
+  await expect(page.locator('main a[href*="source/expansion/"]')).toHaveCount(0);
+  expect(await page.locator('main a[href*="textbook/"]').count()).toBeGreaterThan(0);
+});
 test('closed answers are visible for printing without changing their open state', async ({ page }) => {
   await page.goto('social-studies/textbook/F01.html');
   const answer = page.locator('.prose details').first();

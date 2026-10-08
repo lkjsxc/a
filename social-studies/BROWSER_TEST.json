@@ -1,4 +1,54 @@
 {
+  "input_tree_sha256": "ba7bf6fe0515de2e7fe297ced915efb3f69010180a1df46e3e065822a3570a96",
+  "input_sha256": {
+    "source/00-foundation.txt": "34375479a54e08e07313a1fb8aa7a7757a67792a76d9ac4597964a34d273f656",
+    "source/10-geography-world-a.txt": "102c454dcf971a778aed364e8242919e97ad02a953d20990df81d900f9806a11",
+    "source/11-geography-world-b.txt": "99204bcac4d8cab2c11797a61e3831b2b289e1c08eae6ded5b3354401b02ddef",
+    "source/12-geography-japan-a.txt": "7af5f60ec80dacb2c27047af9678de2fb4f884eadc14ac6522579ac32c69b3fe",
+    "source/13-geography-japan-b.txt": "c9fe20df9cf7e868db710914d5e52eb0707bcfe86d9d7ddc379f3b10414455b1",
+    "source/20-history-ancient.txt": "f27c7782ee2f3a232c7e2016e3b5c713997581a7b4d9933d21d7040110e78851",
+    "source/21-history-medieval.txt": "3c8d68ea00ee0f9e3209365ab5cae0068573e26da570abcc582f83b1f09105c5",
+    "source/22-history-edo.txt": "e421f793b2b21bc00a9c2b62143e965ce44460b46a62fd41c08505ba37f8d5bb",
+    "source/23-history-modern.txt": "de7348f1d366d814fb57e2e93a461a2fc79304b488579342f2835d2173e152ba",
+    "source/24-history-contemporary.txt": "171de58ddd8235b208f74bad9925eba3212bea32821ac180e7fdd548d4f3f349",
+    "source/30-civics-foundations-politics.txt": "bcb389cbdfca177fa14f483a896c8c0009b36d448999e6c02543a9b3aaf39bca",
+    "source/31-civics-government-economy.txt": "ae03cd1744ad4697c53e17e99c3989a62c083ec658c84975c2ee68aededa0101",
+    "source/32-civics-finance-international.txt": "cfdae5ccef71b581a72f70e759c0b92b973fb3f7b6fa87447dd16fde7665ad00",
+    "source/assessments.json": "890e57b20aa58eae353926cf9ad19c2f43b1d4ea80664cc8681624bd59a10e76",
+    "source/expansion/10-world-foundations.txt": "cb80a02729018fd83e34dac00b53e86f8994e64486b48ab7c9fa1a9cf5b0007f",
+    "source/expansion/11-asia-europe.txt": "3046a761ab087364295cb87f1424196fb2563d1efff4198273970ae6c282546c",
+    "source/expansion/12-africa-americas-oceania.txt": "6587007c6bf0de729c0b6222bcfdede54f0a04a6bca20061f4284f3755770caa",
+    "source/expansion/13-japan-natural-environment.txt": "03de632a7452b63988ec23f8f60a8cdb93710330916259ad4e37fc53c8196a95",
+    "source/expansion/14-japan-industry.txt": "8b51a310d2aa5e40eabff501738402db5e22b87b9341c519975f66c1d6c53364",
+    "source/expansion/15-japan-west-regions.txt": "879787a3b7c064b01ea140a9b3c73aa6ef4f685d52eb7542db2669b4fe386225",
+    "source/expansion/16-japan-east-inquiry.txt": "562d77d5400301e7a44d4fa24bc3fce478fe18664dd71607cf9c478b5d8080c4",
+    "source/expansion/20-ancient-societies.txt": "2913af5b75bc35b8aab434e90787efe0a3b686a356b631c099855bd6f16013ca",
+    "source/expansion/21-ancient-medieval-transition.txt": "7462810f5ae0f54a823f7cac644f894e1ef06286e6af29c1cd85a6e0e3ac0c28",
+    "source/expansion/22-medieval-exchange-unification.txt": "85859d2cb8731b045be2317a9fe665d41891b59e7e58efc6c3b891a9f55d0eac",
+    "source/expansion/23-edo-government-economy.txt": "e2bc32681346972c9d965d39b8c2023edc16905d3afda4bde4e9cfdbdbb892cf",
+    "source/expansion/24-edo-to-meiji.txt": "e32d03beb6d5370d0f241b9640f308cab857d712c0aa9aa1a44e9e5ecf7a80c6",
+    "source/expansion/25-modern-politics-and-war.txt": "a63697569e8fff8f1aa2b600b354c82f9245e2291256997beecc5e61f4ce6229",
+    "source/expansion/26-postwar-and-globalization.txt": "861ce1abc2121f37f1d5c09b97b726940705bdb8965ca62b56012552d42a66ef",
+    "source/expansion/30-civics-information-constitution.txt": "73485c888fa7577b390be49bd9bc0e865b8d031054ca2d31957261c4d34105c9",
+    "source/expansion/31-civics-rights-election-diet.txt": "0c9ad12e5305b0fe881dae4b885068be52b7de9dd69dfe7c289a1ab5111244f0",
+    "source/expansion/32-civics-administration-courts-local.txt": "30a41bdbfda138a56d6ceb4150a31af4479d6267f6e4b0467149a5ea5bc4b448",
+    "source/expansion/33-civics-consumer-market-labor.txt": "7ceac16277bce31a2ca40f2d52ec7d96444cb88f3c5174043ead03f414846e68",
+    "source/expansion/34-civics-finance-tax-welfare.txt": "77f657f4ebf514859de3d4fb4b9c6eaa9c7f6a91d27be2c51de7fb243bdfd7a9",
+    "source/expansion/35-civics-international-sustainability.txt": "664d6754fe2938d74b6699c7362411963c8e2a12f7273c6d6f953f2a19517bf8",
+    "source/handbook.md": "77c4f87e69e8c18bedb836c4f032b2a7100e06a055f08b0aab3abe89fc949200",
+    "source/sources.json": "2a39a2b9f00c92fc71adea486ae12962757a3b70e0dd73977d80743e89d89d10",
+    "tools/build.py": "83064d83a5998eae02740cbe7dc827281d3a37aea00fcb19c2b858b3e2a31823",
+    "tools/check_import.py": "3d3c4bde84e50314b9851d2a9a54f9bac053b12c3f3c4ee9b23ade71e76abb78",
+    "tools/check_render.py": "3aee0d43c13e39d83c894365bcd08eb989e07fab05f0538e07804270aff63c82",
+    "tools/check_upgrade.py": "e24358c5336d8e7b764bad707c12ac7d92a2b9ff6d8f5f28503c0f95e2f8ee5f",
+    "tools/evidence.py": "0dbbdba0b57cb044ce425e11ac6c6fefca519726de6724bc0eb094a2568fe862",
+    "tools/expansion.py": "8d6e720e3a133e01d9159dd50348069814d1c6bd28366508fa729d56fb897209",
+    "tools/make_assets.py": "a7d635d8ae01b194a610aa49a7f8ebce7a7448553bc4c2a46c3b03473a0f049d",
+    "tools/test_expansion.py": "0ecdbb107c6d14267f9a97a6c3615146d895ec6dadf82d933caff40a1713dd0f",
+    "ruby-policy.json": "5999ec395dd051b9fbe5255735ea3c0067e1e54425c098f27e4af2a3211aea48",
+    "baseline-20261008.json": "bf5d3f2e074139c6a0ab270bef777aeeff577c18d1b59e025c8edc4d94639c8a",
+    "requirements.txt": "3e8b3deb320f557f3309b525e4d8abedb092e133171b78af9cfa9d2ae4019e33"
+  },
   "status": "passed",
   "engine": "Chromium",
   "version": "153.0.8010.12",
@@ -6,7 +56,7 @@
     {
       "file": "index.html",
       "width": 1280,
-      "sha256": "aec943eeceec0a133d00acdae90d8c712a5545923c3f0f7cddf3ab9e4f22bc91"
+      "sha256": "1da34c386f440fb7f786c1dd8957d90d93c091e39934a420af31ba8c796fd5fe"
     },
     {
       "file": "study-guide.html",
@@ -16,7 +66,7 @@
     {
       "file": "workbook.html",
       "width": 1280,
-      "sha256": "066df5b6fa03ac51d0deb4014141a58aad49ba7d1db6bab5e9f8c7529315760a"
+      "sha256": "4fa4c956d5a5650530ae7bf59d6a5da13dd6410db1ace414984e396f4464c72f"
     },
     {
       "file": "atlas.html",
@@ -41,17 +91,17 @@
     {
       "file": "textbook/H04.html",
       "width": 1280,
-      "sha256": "ee2e8c865f7ab24a882c5c348d40dcffda6177c200b5f4175fab9953c1719a2e"
+      "sha256": "b63c04a3f460a62479bd9f4f4f4f170172e6130fbec4673e30fdd63e36ed472a"
     },
     {
       "file": "textbook/C11.html",
       "width": 1280,
-      "sha256": "16050b4ef826dae72644eb5a8da7bd3f35707d39eeb1a7a4095f7a93e63c08f9"
+      "sha256": "943d78f7d503403560b3da1762f9237c8a62a81ccc8ce232bb335b4b1fb1deae"
     },
     {
       "file": "index.html",
       "width": 390,
-      "sha256": "aec943eeceec0a133d00acdae90d8c712a5545923c3f0f7cddf3ab9e4f22bc91"
+      "sha256": "1da34c386f440fb7f786c1dd8957d90d93c091e39934a420af31ba8c796fd5fe"
     },
     {
       "file": "study-guide.html",
@@ -61,7 +111,7 @@
     {
       "file": "workbook.html",
       "width": 390,
-      "sha256": "066df5b6fa03ac51d0deb4014141a58aad49ba7d1db6bab5e9f8c7529315760a"
+      "sha256": "4fa4c956d5a5650530ae7bf59d6a5da13dd6410db1ace414984e396f4464c72f"
     },
     {
       "file": "atlas.html",
@@ -86,17 +136,17 @@
     {
       "file": "textbook/H04.html",
       "width": 390,
-      "sha256": "ee2e8c865f7ab24a882c5c348d40dcffda6177c200b5f4175fab9953c1719a2e"
+      "sha256": "b63c04a3f460a62479bd9f4f4f4f170172e6130fbec4673e30fdd63e36ed472a"
     },
     {
       "file": "textbook/C11.html",
       "width": 390,
-      "sha256": "16050b4ef826dae72644eb5a8da7bd3f35707d39eeb1a7a4095f7a93e63c08f9"
+      "sha256": "943d78f7d503403560b3da1762f9237c8a62a81ccc8ce232bb335b4b1fb1deae"
     }
   ],
   "checks": [
     "76 lesson articles and vocabulary tables",
-    "228 collapsible answers",
+    "456 collapsible answers",
     "no scripts or application controls; JavaScript disabled",
     "native answer disclosure and CSS-only print expansion",
     "local images decoded",

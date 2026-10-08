@@ -37,7 +37,7 @@
     },
     "JMA": {
       "title": "気象庁：日本の天候の特徴",
-      "url": "https://www.data.jma.go.jp/cpd/j_climate/japan_climate.html",
+      "url": "https://www.jma.go.jp/jma/kishou/know/kisetsu_riyou/tenkou/gaisetu.html",
       "note": "日本の気候と季節変化。教材の雨温図は比較練習用の架空モデル。"
     },
     "MAFF": {
@@ -67,9 +67,9 @@
       "note": "自助・共助・公助と災害への備え。実際の避難では自治体の最新情報を使う。"
     },
     "OKINAWA": {
-      "title": "沖縄県：県のあらまし",
-      "url": "https://www.pref.okinawa.jp/kensei/kennoaramashi/index.html",
-      "note": "沖縄の歴史・地理・文化と現在の課題を調べる入口。"
+      "title": "沖縄県：おきなわのすがた（県勢概要・令和6年度版）",
+      "url": "https://www.pref.okinawa.jp/kensei/kengaiyo/1023611/1037743.html",
+      "note": "沖縄の自然・人口・土地利用・歴史を調べる資料。統計の年次は各表で確認する。"
     },
     "AINU": {
       "title": "北海道アイヌ協会：アイヌ民族について",
@@ -138,13 +138,13 @@
     },
     "DIET": {
       "title": "参議院：国会のしくみと法律ができるまで",
-      "url": "https://www.sangiin.go.jp/japanese/aramashi/",
+      "url": "https://www.sangiin.go.jp/jpn/shiryo/kiso/index.html",
       "note": "二院制、国会の種類、法律案・予算・首相指名などの手続き。"
     },
     "ELECTION": {
-      "title": "参議院：選挙制度",
-      "url": "https://www.sangiin.go.jp/japanese/aramashi/",
-      "note": "選挙権・被選挙権、衆参の選挙制度。手続きや直近の選挙は選挙管理委員会の最新案内を確認する。"
+      "title": "参議院：国会の基礎知識・選挙制度と歴史",
+      "url": "https://www.sangiin.go.jp/jpn/shiryo/kiso/index.html",
+      "note": "参議院の選挙制度の変遷と国会の基礎知識。手続きや直近の選挙は選挙管理委員会の最新案内を確認する。"
     },
     "LOCAL_GOV": {
       "title": "東京都議会：議会のしくみ・子供向け学習資料の入口",
@@ -177,8 +177,8 @@
       "note": "対象となる刑事事件、参加と判断の仕組み。"
     },
     "JFTC": {
-      "title": "公正取引委員会：こどもホームページ",
-      "url": "https://www.jftc.go.jp/kids/",
+      "title": "公正取引委員会：よくある質問コーナー（独占禁止法）",
+      "url": "https://www.jftc.go.jp/dk/dk_qa.html",
       "note": "市場の競争、独占禁止法、公正取引委員会の役割。"
     },
     "BOJ": {
@@ -198,7 +198,7 @@
     },
     "MHLW_WELFARE": {
       "title": "厚生労働省：社会保障とは何か",
-      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/shakaihoshou/index.html",
+      "url": "https://www.mhlw.go.jp/stf/newpage_21479.html",
       "note": "社会保険・社会福祉・公的扶助・保健医療等の制度。"
     },
     "MOFA_TRADE": {
